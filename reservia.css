@@ -1,0 +1,153 @@
+@font-face
+{
+    font-family: 'Raleway', sans-serif;
+    src: url(fonts/static/Raleway-Regular.ttf) format('truetype');
+}
+body
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+}
+h1
+{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+h2
+{
+    font-weight:bold;
+    font-size: 0.95em;
+}
+h3
+{
+    color: grey;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+.soustitre
+{
+ line-height:0%;   
+}
+#titre_principal
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 4em;
+}
+nav ul
+{
+   list-style-type: none;
+   display: ;
+}
+
+#rechercher
+{
+   display: inline-block;
+   vertical-align: middle;
+   height: 4em;
+   position: relative;
+   top: 1em;
+}
+#map_marker
+{
+    float: left;
+    width:  1.8em;
+    height: 1.8em;
+    background-color:rgb(242,242,242);
+    padding-left: 1em;
+    padding-top: 0.8em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+#barre_de_recherche
+{
+    font-weight: bold;
+    font-size: 1em;
+    height: 2.8em;
+    width:  12em;
+    padding-left: 1em;
+    border-style: solid;
+    border-top-color: rgb(242,242,242);
+    border-bottom-color: rgb(242,242,242);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.bouton_search
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    height: 2.8em;
+    background-color: #0065FC;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+ }
+#filtres 
+{
+    display: flex;
+    vertical-align: middle;
+    position: relative;
+    top: 1.2em;
+}
+.barre_de_filtres
+{    
+    display: inline-flex;
+}
+.icones_filtres
+{
+    margin-left: 1em;
+    width:  1.8em;
+    height: 1.8em;
+    color: #0065FC;
+    background-color: #deebff;
+    padding-left: 0.75em;
+    padding-top: 0.7em;
+    border-radius: 2.2em;
+}
+.noms_filtres
+{
+    margin-left: -1.1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 2.8em;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    padding-right: 1em;
+    padding-left: 1.5em;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0.25em;
+    border-top-color: rgb(242,242,242);
+    border-bottom-color: rgb(242,242,242);
+    border-right-color: rgb(242,242,242);
+    border-left-color: transparent;
+}
+#information_ville
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 4em;
+    position: relative;
+    top: 2em;
+}
+#fa-info-circle
+{
+    float: left;
+    background-color: #0065FC;
+    color:  white;
+    border-radius: 0.5em;
+}
+#information_ville h3
+{
+    margin-left: 2em;
+}
+#hebergement_6
+{
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+    background: #999;
+    cursor: pointer;
+}
