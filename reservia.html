@@ -9,23 +9,23 @@
     <body>
         <div id="bloc_page">
             <header>
-                <div id="titre_principal">
-                    <div id="logo">
-                        <img src="images/logo/Reservia.svg" alt="Logo reservia"/>
-                    </div>
-                    <nav>
-                        <!-- s'inscrire devrait envoyer sur un formulaire, non paramétré pour l'instant-->
-                        <ul>
-                            <li><a href="#hebergements">Hébergements</a></li>
-                            <li><a href="#activites">Activités</a></li>
-                         </ul>
-                    </nav>
-                    <a href="#inscription">S'inscrire</a>
+                <div id="logo">
+                    <img src="images/logo/Reservia.svg" alt="Logo reservia"/>
+                </div>
+                <nav>
+                    <!-- s'inscrire devrait envoyer sur un formulaire, non paramétré pour l'instant-->
+                    <ul>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                        </ul>
+                </nav>
+                <div id="inscription">
+                    <a href="#inscription" class="inscription">S'inscrire</a>
                 </div>
             </header>
             <section>
-                <h1>Trouvez votre hébergement pour des vacances de r&ecirc;ve</h1>
-                <div class="soustitre">
+                <div id="titre_principal">
+                    <h1>Trouvez votre hébergement pour des vacances de r&ecirc;ve</h1>
                     <h3>En plein centre ville ou en pleine nature</h3>
                 </div>
                 <div id="rechercher">
@@ -69,16 +69,13 @@
                 </div>
                 <div id="information_ville">
                     <!--hypothèse, output non vu en cours, à mettre à jour selon traitement utilisé et informations sur le code, résultat dissocié sur la page des données d'entrée du formulaire-->
-                    <form method="POST" action="scripts.php">
-                        <div id="fa-info-circle">
-                            <i class="fas fa-info-circle"></i>
-                        </div>
-                        <output for="barre_de_recherche" name="nombre_de_logements" id="nombre_de_logements"></output>
-                        <h3>Plus de 500 logements sont disponibles dans cette ville</h3>
-                    </form>
+                    <div id="fa-info">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <h3>Plus de 500 logements sont disponibles dans cette ville</h3>
                 </div>
             </section>
-            <section>
+            <section id="partie1">
                 <div id="hebergements">
                 <!--sera complété du lien vers les hébergements filtrés selon la ville saisie dans la barre de recherche de header-->
                     <h1>Hébergements à Marseille</h1>
@@ -245,7 +242,7 @@
                     </div>
                 </aside>
             </section>
-            <section>
+            <section id="partie2">
                 <div id="activites">
                     <!--sera complété du lien vers les activités filtrées selon la ville saisie dans la barre de recherche de header-->
                     <h1>Activités à Marseille</h1>
