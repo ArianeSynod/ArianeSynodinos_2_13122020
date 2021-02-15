@@ -10,9 +10,13 @@ body
     margin-left: 1rem;
     margin-right: 1rem;
 }
+#bloc_page
+{
+    width: 1065px;
+}
 h1
 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.1rem;
 }
 h2
@@ -23,7 +27,7 @@ h2
 h3
 {
     color: grey;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     font-weight: bolder;
 }
 header
@@ -187,6 +191,8 @@ a.inscription:hover
 #information_ville
 {
     display: flex;
+    align-items: baseline;
+    margin-bottom: 1.4rem;
 }
 #fa-info
 {
@@ -200,12 +206,6 @@ a.inscription:hover
     border: 1px solid #d9d9d9;
     border-radius: 100%;
 }
-
-#information_ville
-{
-    align-items: baseline;
-    margin-bottom: 1.4rem;
-}
 #information_ville h3
 {
     margin-left: 0.5rem;
@@ -216,285 +216,386 @@ a.inscription:hover
 }
 #hebergements
 {
-    width: 60%;
+    width: 62%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
     background-color: rgb(242,242,242);
-    border-radius: 2rem;
-    padding-top: 1.5rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 #hebergements h1
 {
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 100%;
+    padding-top: 1.2rem;
+    margin-bottom: 0.2rem;
 }
 #hebergement_1
 {
     background-color: white;
     width: auto;
-    height: 12rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
 }
 #hebergement_1 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 13rem;
+    max-width: 11.6rem;
     padding: 0.2rem;
     height: auto;
     margin: auto;
 }
 #hebergement_1 figure img 
 {
-    width: 12rem;
-    height: 6rem;
+    margin-top: -0.9rem;
+    width: 11.6rem;
+    height: 6.7rem;
+    object-fit: cover;
+    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 #hebergement_1 figure figcaption
 {
+    background-color: white;
     line-height: 50%;
     text-align: left;
-    margin-left: 0.2rem;
-    border-radius: 1rem;
+    margin-top: -1rem;
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem;
 }
 #hebergement_1 figure figcaption h2
 {
-    font-size: 85%;
+    font-size: 80%;
     font-weight: bold;
+    margin-left: 0.5rem;
+}
+#hebergement_1 figure figcaption h3
+{
+    margin-left: 0.5rem;
 }
 #hebergement_1 figure figcaption p
 {
     color: #0065FC;
-    font-size: 0.6rem;
+    font-size: 55%;
+    margin-left: 0.5rem;
 }
 #hebergement_2
 {
     background-color: white;
     width: auto;
-    height: 12rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
 }
 #hebergement_2 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 13rem;
+    max-width: 11.6rem;
     padding: 0.2rem;
     height: auto;
     margin: auto;
 }
 #hebergement_2 figure img 
 {
-    width: 12rem;
-    height: 6rem;
+    margin-top: -0.9rem;
+    width: 11.6rem;
+    height: 6.7rem;
+    object-fit: cover;
+    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 #hebergement_2 figure figcaption
 {
-    line-height: 0.5rem;
+    background-color: white;
+    line-height: 50%;
     text-align: left;
-    margin-left: 0.2rem;
-    border-radius: 1rem;
+    margin-top: -1rem;
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem;
 }
 #hebergement_2 figure figcaption h2
 {
-    font-size: 85%;
+    font-size: 80%;
     font-weight: bold;
+    margin-left: 0.5rem;
+}
+#hebergement_2 figure figcaption h3
+{
+    margin-left: 0.5rem;
 }
 #hebergement_2 figure figcaption p
 {
     color: #0065FC;
-    font-size: 0.6rem;
+    font-size: 55%;
+    margin-left: 0.5rem;
 }
 #hebergement_3
 {
     background-color: white;
     width: auto;
-    height: 12rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
 }
 #hebergement_3 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 13rem;
+    max-width: 11.6rem;
     padding: 0.2rem;
     height: auto;
     margin: auto;
 }
 #hebergement_3 figure img 
 {
-    width: 12rem;
-    height: 6rem;
+    margin-top: -0.9rem;
+    width: 11.6rem;
+    height: 6.7rem;
+    object-fit: cover;
+    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 #hebergement_3 figure figcaption
 {
-    line-height: 0.5rem;
+    background-color: white;
+    line-height: 50%;
     text-align: left;
-    margin-left: 0.2rem;
-    border-radius: 1rem;
+    margin-top: -1rem;
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem;
 }
 #hebergement_3 figure figcaption h2
 {
-    font-size: 85%;
+    font-size: 80%;
     font-weight: bold;
+    margin-left: 0.5rem;
+}
+#hebergement_3 figure figcaption h3
+{
+    margin-left: 0.5rem;
 }
 #hebergement_3 figure figcaption p
 {
     color: #0065FC;
-    font-size: 0.6rem;
+    font-size: 55%;
+    margin-left: 0.5rem;
 }
 #hebergement_4
 {
     background-color: white;
     width: auto;
-    height: 12rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
 }
 #hebergement_4 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 13rem;
+    max-width: 11.6rem;
     padding: 0.2rem;
     height: auto;
     margin: auto;
 }
 #hebergement_4 figure img 
 {
-    width: 12rem;
-    height: 6rem;
+    margin-top: -0.9rem;
+    width: 11.6rem;
+    height: 6.7rem;
+    object-fit: cover;
+    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 #hebergement_4 figure figcaption
 {
-    line-height: 0.5rem;
+    background-color: white;
+    line-height: 50%;
     text-align: left;
-    margin-left: 0.2rem;
-    border-radius: 1rem;
+    margin-top: -1rem;
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem;
 }
 #hebergement_4 figure figcaption h2
 {
-    font-size: 85%;
+    font-size: 80%;
     font-weight: bold;
+    margin-left: 0.5rem;
+}
+#hebergement_4 figure figcaption h3
+{
+    margin-left: 0.5rem;
 }
 #hebergement_4 figure figcaption p
 {
     color: #0065FC;
-    font-size: 0.6rem;
+    font-size: 55%;
+    margin-left: 0.5rem;
 }
 #hebergement_5
 {
     background-color: white;
     width: auto;
-    height: 12rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
 }
 #hebergement_5 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 13rem;
+    max-width: 11.6rem;
     padding: 0.2rem;
     height: auto;
     margin: auto;
 }
 #hebergement_5 figure img 
 {
-    width: 12rem;
-    height: 6rem;
+    margin-top: -0.9rem;
+    width: 11.6rem;
+    height: 6.7rem;
+    object-fit: cover;
+    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 #hebergement_5 figure figcaption
 {
-    line-height: 0.5rem;
+    background-color: white;
+    line-height: 50%;
     text-align: left;
-    margin-left: 0.2rem;
-    border-radius: 1rem;
+    margin-top: -1rem;
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem;
 }
 #hebergement_5 figure figcaption h2
 {
-    font-size: 85%;
+    font-size: 80%;
     font-weight: bold;
+    margin-left: 0.5rem;
+}
+#hebergement_5 figure figcaption h3
+{
+    margin-left: 0.5rem;
 }
 #hebergement_5 figure figcaption p
 {
     color: #0065FC;
-    font-size: 0.6rem;
+    font-size: 55%;
+    margin-left: 0.5rem;
 }
 #hebergement_6
 {
     background-color: white;
     width: auto;
-    height: 12rem;
-    border-radius: 1.5rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
 }
 #hebergement_6 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 13rem;
+    max-width: 11.6rem;
     padding: 0.2rem;
     height: auto;
     margin: auto;
 }
 #hebergement_6 figure img 
 {
-    width: 12rem;
-    height: 6rem;
+    margin-top: -0.9rem;
+    width: 11.6rem;
+    height: 6.7rem;
+    object-fit: cover;
+    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 #hebergement_6 figure figcaption
 {
-    line-height: 0.5rem;
+    background-color: white;
+    line-height: 50%;
     text-align: left;
-    margin-left: 0.2rem;
-    border-radius: 1rem;
+    margin-top: -1rem;
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem;
 }
 #hebergement_6 figure figcaption h2
 {
-    font-size: 85%;
+    font-size: 80%;
     font-weight: bold;
+    margin-left: 0.5rem;
+}
+#hebergement_6 figure figcaption h3
+{
+    margin-left: 0.5rem;
 }
 #hebergement_6 figure figcaption p
 {
     color: #0065FC;
-    font-size: 0.6rem;
+    font-size: 55%;
+    margin-left: 0.5rem;
+}
+#afficher a
+{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 0.8rem;
+    cursor: pointer;
+}
+#afficher a:link
+{
+    text-decoration: none;
+}
+#afficher a:hover
+{
+    color: #0065FC;
+    font-weight: bold;
 }
 section aside #populaires
 {
-    flex: 40%
+    flex: 38%
     align-items: flex-end;
     position: relative;
     margin-left: 2rem;
     background-color: rgb(242,242,242);
     border-radius: 1rem;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 1.5rem;
 }
+#titre_populaires
+{
+    display: flex;
+    margin-bottom: -1.2rem;
+}
+.fa-chart-line
+{
+    align-items: flex-end;
+    font-size: 1.1rem;
+    padding-top: 1.2rem;
+ }
 #populaires h1
 {
-    font-size: 100%;
+    align-items: flex-start;
     width: 100%;
-    margin-bottom: 1.3rem;
 }
 #populaire_1
 {
@@ -624,7 +725,7 @@ section aside #populaires
 {
     text-align: left;
     background-color: white;
-    margin-left: -2rem;
+    margin-left: -0.5rem;
     margin-right: 1rem;
     padding-left: 1rem;
     border-top-right-radius: 1rem;
