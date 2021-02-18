@@ -7,12 +7,12 @@
 body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 #bloc_page
 {
-    width: 1065px;
+    width: 66.56rem;
 }
 h1
 {
@@ -41,7 +41,7 @@ header
 {
     position: absolute;
     top: 2rem;
-    left: 1rem;
+    left: 4rem;
 }
 #logo img
 {
@@ -570,7 +570,7 @@ a.inscription:hover
 }
 section aside #populaires
 {
-    flex: 38%
+    flex: 38%;
     align-items: flex-end;
     position: relative;
     margin-left: 2rem;
@@ -742,4 +742,254 @@ section aside #populaires
     color: #0065FC;
     font-size: 55%;
     margin-top: 2rem;
+}
+#activites
+/* utilisation de margin négatifs pour forcer l'alignement, voir à terme si possibilité de faire autrement*/
+{
+    display: grid;
+    width: 69.06rem;
+    height: auto;
+    margin-left: -2.5rem;
+    margin-bottom: 0.5rem;
+    grid-template-columns: repeat (auto-fit, 1fr);
+    grid-template-rows: repeat (auto-fit, 1fr);
+    grid-template-areas: 
+        "a m m m"
+        "b c e f"
+        "b d e g";
+    background-color: white;
+    margin-block-start: 2rem;
+}
+#activites h1
+{
+    grid-area: a;
+    width: 100%;
+    text-align: left;
+    margin-left: 2.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+#activites h2
+{
+    font-size: 80%;
+}
+#activite_1
+{
+    grid-area: b;
+    border-radius: 1rem;
+    align-self: start;
+    margin-right: -3rem;
+    cursor: pointer;
+}
+#activite_1 figure
+{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+}
+#activite_1 figure img
+{
+    width: 15rem;
+    height: 18.9rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#activite_1 figure figcaption
+{
+    background-color: white;
+    width: 14rem;
+    height: 2.4rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+#activite_2
+{
+    grid-area: c;
+    width: auto;
+    border-radius: 1rem;
+    align-self: start;
+    margin-bottom: -1.8rem;
+    margin-right: -3rem;
+    cursor: pointer;
+}
+#activite_2 figure
+{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+}
+#activite_2 figure img
+{
+    width: 15rem;
+    height: 8.6rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#activite_2 figure figcaption
+{
+    background-color: white;
+    width: 14rem;
+    height: 2.4rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+#activite_3
+{
+    grid-area: d;
+    width: auto;
+    border-radius: 1rem;
+    align-self: end;
+    cursor: pointer;
+    margin-right: -3rem;
+}
+#activite_3 figure
+{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+}
+#activite_3 figure img
+{
+    width: 15rem;
+    height: 5rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#activite_3 figure figcaption
+{
+    background-color: white;
+    width: 14rem;
+    height: 2.4rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+#activite_4
+{
+   grid-area: e;
+   border-radius: 1rem;
+   align-self: start;
+   cursor: pointer;
+   margin-right: -3rem;
+}
+#activite_4 figure
+{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+}
+#activite_4 figure img
+{
+    width: 15rem;
+    height: 18.9rem;
+    filter: opacity(85%);
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#activite_4 figure figcaption
+{
+    background-color: white;
+    width: 14rem;
+    height: 2.4rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+#activite_5
+{
+    grid-area: f;
+    width: auto;
+    border-radius: 1rem;
+    align-self: start;
+    cursor: pointer;
+}
+#activite_5 figure
+{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+}
+#activite_5 figure img
+{
+    width: 15rem;
+    height: 6.6rem;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#activite_5 figure figcaption
+{
+    background-color: white;
+    width: 14rem;
+    height: 2.4rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+#activite_6
+{
+    grid-area: g;
+    width: auto;
+    border-radius: 1rem;
+    align-self: end;
+    cursor: pointer;
+}
+#activite_6 figure
+{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+}
+#activite_6 figure img
+{
+    width: 15rem;
+    height: 7.1rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#activite_6 figure figcaption
+{
+    background-color: white;
+    width: 14rem;
+    height: 2.4rem;
+    font-weight: bold;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
