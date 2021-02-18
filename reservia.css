@@ -7,8 +7,8 @@
 body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 #bloc_page
 {
@@ -41,7 +41,7 @@ header
 {
     position: absolute;
     top: 2rem;
-    left: 4rem;
+    left: 2.5rem;
 }
 #logo img
 {
@@ -992,4 +992,89 @@ section aside #populaires
     padding-left: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+footer
+{
+    display: flex;
+    width: 71.56rem;
+    background-color: rgb(242,242,242);
+    margin-left: -2.5rem;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+footer h1
+{
+    font-size: 90%;
+    line-height: 0.3rem;
+}
+#a_propos
+{
+    width: 31%;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}
+#menu_a_propos ul
+{
+    list-style: none;
+}
+#menu_a_propos a
+{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: -2.5rem;
+}
+#menu_a_propos a:hover
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+#nos_hebergements
+{
+    width: 31%;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}
+#menu_nos_hebergements ul
+{
+    list-style: none;
+}
+#menu_nos_hebergements a
+{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: -2.5rem;
+}
+#menu_nos_hebergements a:hover
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+#assistance
+{
+    width: 38%;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}
+#menu_assistance ul
+{
+    list-style: none;
+}
+#menu_assistance a
+{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: -2.5rem;
+}
+#menu_assistance a:hover
+{
+    color: #0065FC;
+    font-weight: bold;
 }
