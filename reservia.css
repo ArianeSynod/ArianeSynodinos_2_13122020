@@ -7,45 +7,51 @@
 body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 4rem;
 }
 #bloc_page
 {
-    width: 66.56rem;
+    width: 92rem;
 }
 h1
 {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 h2
 {
-    font-weight:bold;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 h3
 {
-    color: grey;
-    font-size: 0.70rem;
-    font-weight: bolder;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+}
+.stars
+{
+    color: #0065FC; 
+}
+.no_star
+{
+    color: rgb(242,242,242);
 }
 header
 {
     display: flex;
-    font-size: 0.9rem;
-    justify-content: flex-end;
+    width: 80rem;
     align-items: baseline;
+    justify-content: flex-end;
 }
 #logo
 {
     position: absolute;
-    top: 2rem;
-    left: 2.5rem;
+    top: 2.5rem;
+    left: 4rem;
 }
 #logo img
 {
-    max-width: 85%;
+    max-width: 100%;
 }
 nav ul
 {
@@ -60,9 +66,9 @@ nav li
 }
 nav a
 {
-    font-size: 0.8rem;
     color: grey;
-    font-weight: bold;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
     text-decoration: none;
 }
 nav a:hover
@@ -74,7 +80,6 @@ nav a:hover
 }
 #inscription
 {
-    font-size: 0.8rem;
     color: #0065FC;
     font-weight: bold;
     padding-top: 2rem;
@@ -91,8 +96,11 @@ a.inscription:hover
 }
 #titre_principal
 {
-    line-height: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+#titre_principal h3
+{
+    margin-top: -0.5rem;
 }
 #rechercher
 {
@@ -104,23 +112,26 @@ a.inscription:hover
 #map_marker
 {
     float: left;
-    width:  1.8rem;
-    height: 1.8rem;
+    width:  1em;
+    height: 1.2rem;
+    font-size: 110%;
     background-color:rgb(242,242,242);
-    padding-left: 1rem;
-    padding-top: 0.8rem;
+    padding-top: 1.1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.9rem;
+    padding-left: 1.2rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
 #barre_de_recherche
 {
-    font-weight: bold;
-    font-size: 0.9rem;
-    height: 2.8rem;
-    font-weight: 900;
-    width:  12rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    height: 3.2rem;
+    width:  14.35rem;
     padding-left: 1rem;
     border-style: solid;
+    border-width: 0.1rem;
     border-top-color: rgb(242,242,242);
     border-bottom-color: rgb(242,242,242);
     border-left-color: transparent;
@@ -128,15 +139,17 @@ a.inscription:hover
 }
 .bouton_search
 {
-    font-size: 0.85rem;
-    font-weight: bold;
+    font-size: 1rem;
     color: white;
-    height: 2.8rem;
+    font-weight: 600;
+    height: 3.2rem;
     background-color: #0065FC;
+    margin-left: -0.5rem;
+    border-width: 0rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
     cursor: pointer;
  }
  .bouton_search:hover
@@ -155,29 +168,32 @@ a.inscription:hover
 }
 .icones_filtres
 {
-    margin-left: 1rem;
-    width:  1.75rem;
-    height: 1.75rem;
+    margin-left: 2rem;
+    width:  2rem;
+    height: 2rem;
+    font-size: 1.2rem;
     color: #0065FC;
     background-color: #deebff;
-    padding-left: 0.75rem;
-    padding-top: 0.7rem;
+    padding-top: 1rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
     border-radius: 2.2rem;
 }
 .noms_filtres
 {
-    margin-left: -1.1rem;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    height: 2.5rem;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    padding-right: 1rem;
+    height: 3.2rem;
+    margin-left: -1.2rem;
+    padding-right: 1.2rem;
     padding-left: 1.5rem;
     background-color: transparent;
     border-style: solid;
-    border-width: 0.2rem;
+    border-width: 0.15rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
     border-top-color: rgb(242,242,242);
     border-bottom-color: rgb(242,242,242);
     border-right-color: rgb(242,242,242);
@@ -212,50 +228,51 @@ a.inscription:hover
 }
 #partie1
 {
-    display : flex;
+    max-width: 84rem;
+    display: flex;
 }
 #hebergements
 {
-    width: 62%;
+    width: 66%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     background-color: rgb(242,242,242);
     border-radius: 1rem;
     padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.2rem;
 }
 #hebergements h1
 {
     margin-left: 1rem;
     width: 100%;
-    padding-top: 1.2rem;
-    margin-bottom: 0.2rem;
+    font-size: 135%;
+    padding-top: 1.4rem;
+    margin-bottom: 0.3rem;
 }
 #hebergement_1
 {
     background-color: white;
     width: auto;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 0.8rem;
+    height: 12.5rem;
+    border-radius: 1.3rem;
+    margin: 1rem;
     cursor: pointer;
 }
 #hebergement_1 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 11.6rem;
-    padding: 0.2rem;
+    max-width: 15rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #hebergement_1 figure img 
 {
     margin-top: -0.9rem;
-    width: 11.6rem;
-    height: 6.7rem;
+    width: 14.8rem;
+    height: 8.3rem;
     object-fit: cover;
     object-position: bottom;
     border-top-left-radius: 1rem;
@@ -264,7 +281,7 @@ a.inscription:hover
 #hebergement_1 figure figcaption
 {
     background-color: white;
-    line-height: 50%;
+    line-height: 45%;
     text-align: left;
     margin-top: -1rem;
     border-bottom-left-radius:1rem;
@@ -272,43 +289,43 @@ a.inscription:hover
 }
 #hebergement_1 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #hebergement_1 figure figcaption h3
 {
+    font-size: 90%;
     margin-left: 0.5rem;
 }
 #hebergement_1 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
+    font-size: 72%;
     margin-left: 0.5rem;
 }
 #hebergement_2
 {
     background-color: white;
     width: auto;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 0.8rem;
+    height: 12.5rem;
+    border-radius: 1.3rem;
+    margin: 1rem;
     cursor: pointer;
 }
 #hebergement_2 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 11.6rem;
-    padding: 0.2rem;
+    max-width: 15rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #hebergement_2 figure img 
 {
     margin-top: -0.9rem;
-    width: 11.6rem;
-    height: 6.7rem;
+    width: 14.8rem;
+    height: 8.3rem;
     object-fit: cover;
     object-position: bottom;
     border-top-left-radius: 1rem;
@@ -317,7 +334,7 @@ a.inscription:hover
 #hebergement_2 figure figcaption
 {
     background-color: white;
-    line-height: 50%;
+    line-height: 45%;
     text-align: left;
     margin-top: -1rem;
     border-bottom-left-radius:1rem;
@@ -325,43 +342,43 @@ a.inscription:hover
 }
 #hebergement_2 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #hebergement_2 figure figcaption h3
 {
+    font-size: 90%;
     margin-left: 0.5rem;
 }
 #hebergement_2 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
+    font-size: 72%;
     margin-left: 0.5rem;
 }
 #hebergement_3
 {
     background-color: white;
     width: auto;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 0.8rem;
+    height: 12.5rem;
+    border-radius: 1.3rem;
+    margin: 1rem;
     cursor: pointer;
 }
 #hebergement_3 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 11.6rem;
-    padding: 0.2rem;
+    max-width: 15rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #hebergement_3 figure img 
 {
     margin-top: -0.9rem;
-    width: 11.6rem;
-    height: 6.7rem;
+    width: 14.8rem;
+    height: 8.3rem;
     object-fit: cover;
     object-position: bottom;
     border-top-left-radius: 1rem;
@@ -370,7 +387,7 @@ a.inscription:hover
 #hebergement_3 figure figcaption
 {
     background-color: white;
-    line-height: 50%;
+    line-height: 45%;
     text-align: left;
     margin-top: -1rem;
     border-bottom-left-radius:1rem;
@@ -378,43 +395,43 @@ a.inscription:hover
 }
 #hebergement_3 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #hebergement_3 figure figcaption h3
 {
+    font-size: 90%;
     margin-left: 0.5rem;
 }
 #hebergement_3 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
+    font-size: 72%;
     margin-left: 0.5rem;
 }
 #hebergement_4
 {
     background-color: white;
     width: auto;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 0.8rem;
+    height: 12.5rem;
+    border-radius: 1.3rem;
+    margin: 1rem;
     cursor: pointer;
 }
 #hebergement_4 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 11.6rem;
-    padding: 0.2rem;
+    max-width: 15rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #hebergement_4 figure img 
 {
     margin-top: -0.9rem;
-    width: 11.6rem;
-    height: 6.7rem;
+    width: 14.8rem;
+    height: 8.3rem;
     object-fit: cover;
     object-position: bottom;
     border-top-left-radius: 1rem;
@@ -423,7 +440,7 @@ a.inscription:hover
 #hebergement_4 figure figcaption
 {
     background-color: white;
-    line-height: 50%;
+    line-height: 45%;
     text-align: left;
     margin-top: -1rem;
     border-bottom-left-radius:1rem;
@@ -431,43 +448,43 @@ a.inscription:hover
 }
 #hebergement_4 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #hebergement_4 figure figcaption h3
 {
+    font-size: 90%;
     margin-left: 0.5rem;
 }
 #hebergement_4 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
+    font-size: 72%;
     margin-left: 0.5rem;
 }
 #hebergement_5
 {
     background-color: white;
     width: auto;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 0.8rem;
+    height: 12.5rem;
+    border-radius: 1.3rem;
+    margin: 1rem;
     cursor: pointer;
 }
 #hebergement_5 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 11.6rem;
-    padding: 0.2rem;
+    max-width: 15rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #hebergement_5 figure img 
 {
     margin-top: -0.9rem;
-    width: 11.6rem;
-    height: 6.7rem;
+    width: 14.8rem;
+    height: 8.3rem;
     object-fit: cover;
     object-position: bottom;
     border-top-left-radius: 1rem;
@@ -476,7 +493,7 @@ a.inscription:hover
 #hebergement_5 figure figcaption
 {
     background-color: white;
-    line-height: 50%;
+    line-height: 45%;
     text-align: left;
     margin-top: -1rem;
     border-bottom-left-radius:1rem;
@@ -484,43 +501,43 @@ a.inscription:hover
 }
 #hebergement_5 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #hebergement_5 figure figcaption h3
 {
+    font-size: 90%;
     margin-left: 0.5rem;
 }
 #hebergement_5 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
+    font-size: 72%;
     margin-left: 0.5rem;
 }
 #hebergement_6
 {
     background-color: white;
     width: auto;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 0.8rem;
+    height: 12.5rem;
+    border-radius: 1.3rem;
+    margin: 1rem;
     cursor: pointer;
 }
 #hebergement_6 figure
 {
     display: flex;
     flex-flow: column;
-    max-width: 11.6rem;
-    padding: 0.2rem;
+    max-width: 15rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #hebergement_6 figure img 
 {
     margin-top: -0.9rem;
-    width: 11.6rem;
-    height: 6.7rem;
+    width: 14.8rem;
+    height: 8.3rem;
     object-fit: cover;
     object-position: bottom;
     border-top-left-radius: 1rem;
@@ -529,7 +546,7 @@ a.inscription:hover
 #hebergement_6 figure figcaption
 {
     background-color: white;
-    line-height: 50%;
+    line-height: 45%;
     text-align: left;
     margin-top: -1rem;
     border-bottom-left-radius:1rem;
@@ -537,18 +554,18 @@ a.inscription:hover
 }
 #hebergement_6 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #hebergement_6 figure figcaption h3
 {
+    font-size: 90%;
     margin-left: 0.5rem;
 }
 #hebergement_6 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
+    font-size: 72%;
     margin-left: 0.5rem;
 }
 #afficher a
@@ -556,7 +573,8 @@ a.inscription:hover
     font-weight: bold;
     color: black;
     text-decoration: none;
-    margin: 0.8rem;
+    line-height: 3.4rem;
+    margin-left: 1rem;
     cursor: pointer;
 }
 #afficher a:link
@@ -570,55 +588,57 @@ a.inscription:hover
 }
 section aside #populaires
 {
-    flex: 38%;
+    flex: 34%;
     align-items: flex-end;
     position: relative;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     background-color: rgb(242,242,242);
     border-radius: 1rem;
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding-top: 1.3rem;
+    padding-left: 2.3rem;
     padding-right: 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.2rem;
 }
 #titre_populaires
 {
     display: flex;
-    margin-bottom: -1.2rem;
+    margin-bottom: -0.6rem;
 }
 .fa-chart-line
 {
     align-items: flex-end;
-    font-size: 1.1rem;
+    font-size: 1.45rem;
     padding-top: 1.2rem;
+    padding-right: 0.2rem;
  }
 #populaires h1
 {
     align-items: flex-start;
     width: 100%;
+    font-size: 135%;
 }
 #populaire_1
 {
     background-color: white;
-    width: auto;
+    width: 21.5rem;
     height: auto;
-    border-radius: 1.5rem;
+    border-radius: 1.3rem;
     cursor: pointer;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
 }
 #populaire_1 figure
 {
     display: flex;
     flex-flow: row;
-    max-width: 16.5rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #populaire_1 figure img 
 {
-    width: 8.5rem; 
-    height: 7rem;
+    width: 10.1rem; 
+    height: 8.5rem;
     object-fit: cover;
     object-position: right;
     border-top-left-radius: 1rem;
@@ -628,46 +648,49 @@ section aside #populaires
 {
     text-align: left;
     background-color: white;
-    margin-left: -2rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
+    margin-left: -2.1rem;
+    margin-right: 1.2rem;
+    padding-left: 1.5rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 #populaire_1 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-bottom: -0.3rem;
 }
+#populaire_1 figure figcaption h3
+{
+    font-size: 90%;
+}
 #populaire_1 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
-    margin-top: 2rem;
+    font-size: 66%;
+    margin-top: 2.2rem;
 }
 #populaire_2
 {
     background-color: white;
-    width: auto;
+    width: 21.5rem;
     height: auto;
-    border-radius: 1.5rem;
+    border-radius: 1.3rem;
     cursor: pointer;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
 }
 #populaire_2 figure
 {
     display: flex;
     flex-flow: row;
-    max-width: 16.5rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #populaire_2 figure img 
 {
-    width: 8.5rem; 
-    height: 7rem;
+    width: 10.1rem; 
+    height: 8.5rem;
     object-fit: cover;
     object-position: right;
     border-top-left-radius: 1rem;
@@ -677,45 +700,49 @@ section aside #populaires
 {
     text-align: left;
     background-color: white;
-    margin-left: -2rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
+    margin-left: -2.1rem;
+    margin-right: 1.2rem;
+    padding-left: 1.5rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 #populaire_2 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-bottom: -0.3rem;
 }
+#populaire_2 figure figcaption h3
+{
+    font-size: 90%;
+}
 #populaire_2 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
-    margin-top: 2rem;
+    font-size: 66%;
+    margin-top: 2.2rem;
 }
 #populaire_3
 {
     background-color: white;
-    width: auto;
+    width: 21.5rem;
     height: auto;
-    border-radius: 1.5rem;
+    border-radius: 1.3rem;
     cursor: pointer;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
 }
 #populaire_3 figure
 {
     display: flex;
     flex-flow: row;
-    max-width: 16.5rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
     height: auto;
     margin: auto;
 }
 #populaire_3 figure img 
 {
-    width: 8.5rem; 
-    height: 7rem;
+    width: 10.1rem; 
+    height: 8.5rem;
     object-fit: cover;
     object-position: right;
     border-top-left-radius: 1rem;
@@ -725,40 +752,43 @@ section aside #populaires
 {
     text-align: left;
     background-color: white;
-    margin-left: -0.5rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
+    margin-left: -2.1rem;
+    margin-right: 1.2rem;
+    padding-left: 1.5rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 #populaire_3 figure figcaption h2
 {
-    font-size: 80%;
+    font-size: 100%;
     font-weight: bold;
     margin-bottom: -0.3rem;
 }
+#populaire_3 figure figcaption h3
+{
+    font-size: 90%;
+}
 #populaire_3 figure figcaption p
 {
-    color: #0065FC;
-    font-size: 55%;
-    margin-top: 2rem;
+    font-size: 66%;
+    margin-top: 2.2rem;
 }
 #activites
 /* utilisation de margin négatifs pour forcer l'alignement, voir à terme si possibilité de faire autrement*/
 {
     display: grid;
-    width: 69.06rem;
+    max-width: 84rem;
     height: auto;
+    margin-top: 2rem;
     margin-left: -2.5rem;
     margin-bottom: 0.5rem;
-    grid-template-columns: repeat (auto-fit, 1fr);
-    grid-template-rows: repeat (auto-fit, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
     grid-template-areas: 
         "a m m m"
         "b c e f"
         "b d e g";
     background-color: white;
-    margin-block-start: 2rem;
 }
 #activites h1
 {
@@ -778,20 +808,20 @@ section aside #populaires
     grid-area: b;
     border-radius: 1rem;
     align-self: start;
-    margin-right: -3rem;
+    margin-right: -2.5rem;
     cursor: pointer;
 }
 #activite_1 figure
 {
-    width: 15rem;
+    width: 19.5rem;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_1 figure img
 {
-    width: 15rem;
-    height: 18.9rem;
+    width: 19.5rem;
+    height: 24.5rem;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 1rem;
@@ -801,7 +831,8 @@ section aside #populaires
 {
     background-color: white;
     width: 14rem;
-    height: 2.4rem;
+    height: 3rem;
+    font-size: 125%;
     font-weight: bold;
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
@@ -816,20 +847,20 @@ section aside #populaires
     border-radius: 1rem;
     align-self: start;
     margin-bottom: -1.8rem;
-    margin-right: -3rem;
+    margin-right: -2.5rem;
     cursor: pointer;
 }
 #activite_2 figure
 {
-    width: 15rem;
+    width: 19rem;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_2 figure img
 {
-    width: 15rem;
-    height: 8.6rem;
+    width: 19rem;
+    height: 11.2rem;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 1rem;
@@ -839,8 +870,9 @@ section aside #populaires
 {
     background-color: white;
     width: 14rem;
-    height: 2.4rem;
+    height: 3rem;
     font-weight: bold;
+    font-size: 125%;
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
     padding-left: 1rem;
@@ -854,19 +886,19 @@ section aside #populaires
     border-radius: 1rem;
     align-self: end;
     cursor: pointer;
-    margin-right: -3rem;
+    margin-right: -2.5rem;
 }
 #activite_3 figure
 {
-    width: 15rem;
+    width: 19rem;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_3 figure img
 {
-    width: 15rem;
-    height: 5rem;
+    width: 19rem;
+    height: 7rem;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 1rem;
@@ -876,7 +908,8 @@ section aside #populaires
 {
     background-color: white;
     width: 14rem;
-    height: 2.4rem;
+    height: 3rem;
+    font-size: 125%;
     font-weight: bold;
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
@@ -890,19 +923,19 @@ section aside #populaires
    border-radius: 1rem;
    align-self: start;
    cursor: pointer;
-   margin-right: -3rem;
+   margin-right: -2.5rem;
 }
 #activite_4 figure
 {
-    width: 15rem;
+    width: 19rem;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_4 figure img
 {
-    width: 15rem;
-    height: 18.9rem;
+    width: 19rem;
+    height: 24.5rem;
     filter: opacity(85%);
     object-fit: cover;
     object-position: center;
@@ -913,7 +946,8 @@ section aside #populaires
 {
     background-color: white;
     width: 14rem;
-    height: 2.4rem;
+    height: 3rem;
+    font-size: 125%;
     font-weight: bold;
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
@@ -931,15 +965,15 @@ section aside #populaires
 }
 #activite_5 figure
 {
-    width: 15rem;
+    width: 19rem;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_5 figure img
 {
-    width: 15rem;
-    height: 6.6rem;
+    width: 19rem;
+    height: 8.7rem;
     object-fit: cover;
     object-position: top;
     border-top-left-radius: 1rem;
@@ -949,7 +983,8 @@ section aside #populaires
 {
     background-color: white;
     width: 14rem;
-    height: 2.4rem;
+    height: 3rem;
+    font-size: 125%;
     font-weight: bold;
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
@@ -967,15 +1002,15 @@ section aside #populaires
 }
 #activite_6 figure
 {
-    width: 15rem;
+    width: 19rem;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 2px 2px 2px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_6 figure img
 {
-    width: 15rem;
-    height: 7.1rem;
+    width: 19rem;
+    height: 9.4rem;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 1rem;
@@ -985,7 +1020,8 @@ section aside #populaires
 {
     background-color: white;
     width: 14rem;
-    height: 2.4rem;
+    height: 3rem;
+    font-size: 125%;
     font-weight: bold;
     padding-top: 0.1rem;
     padding-bottom: 0.2rem;
@@ -996,34 +1032,39 @@ section aside #populaires
 footer
 {
     display: flex;
-    width: 71.56rem;
+    width: 100%;
     background-color: rgb(242,242,242);
-    margin-left: -2.5rem;
-    margin-top: 1.5rem;
-    line-height: 1.5rem;
+    margin-left: -4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    line-height: 2rem;
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 footer h1
 {
-    font-size: 90%;
+    font-size: 110%;
     line-height: 0.3rem;
 }
 #a_propos
 {
     width: 31%;
-    margin-top: 1.5rem;
-    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
 }
+#a_propos h1
+{
+    margin-bottom: 1.4rem;
+}
+
 #menu_a_propos ul
 {
     list-style: none;
 }
 #menu_a_propos a
 {
-    font-size: 0.8rem;
-    color: grey;
-    font-weight: bold;
+    font-size: 1rem;
+    color: black;
     text-decoration: none;
     margin-left: -2.5rem;
 }
@@ -1035,8 +1076,12 @@ footer h1
 #nos_hebergements
 {
     width: 31%;
-    margin-top: 1.5rem;
-    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
+}
+#nos_hebergements h1
+{
+    margin-bottom: 1.4rem;
 }
 #menu_nos_hebergements ul
 {
@@ -1044,9 +1089,8 @@ footer h1
 }
 #menu_nos_hebergements a
 {
-    font-size: 0.8rem;
-    color: grey;
-    font-weight: bold;
+    font-size: 1rem;
+    color: black;
     text-decoration: none;
     margin-left: -2.5rem;
 }
@@ -1058,8 +1102,12 @@ footer h1
 #assistance
 {
     width: 38%;
-    margin-top: 1.5rem;
-    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
+}
+#assistance h1
+{
+    margin-bottom: 1.4rem;
 }
 #menu_assistance ul
 {
@@ -1067,9 +1115,8 @@ footer h1
 }
 #menu_assistance a
 {
-    font-size: 0.8rem;
-    color: grey;
-    font-weight: bold;
+    font-size: 1rem;
+    color: black;
     text-decoration: none;
     margin-left: -2.5rem;
 }
