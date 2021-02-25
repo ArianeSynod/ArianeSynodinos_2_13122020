@@ -7,11 +7,20 @@
 body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    margin-left: 4rem;
+    margin: 0;
+    width: 1440px;
 }
 #bloc_page
 {
-    width: 92rem;
+    margin: 0 3rem 0 3.5rem;
+}
+@media screen and (max-width: 768px)
+/*smartphones*/
+{
+    #bloc_page
+    {
+        width: auto;
+    }
 }
 h1
 {
@@ -39,9 +48,17 @@ h3
 header
 {
     display: flex;
-    width: 80rem;
+    width: auto;
     align-items: baseline;
     justify-content: flex-end;
+}
+@media screen and (max-width: 768px)
+/*smartphones*/
+{
+    #header
+    {
+        width: auto;
+    }
 }
 #logo
 {
@@ -53,30 +70,45 @@ header
 {
     max-width: 100%;
 }
+@media screen and (max-width: 768px)
+/*smartphones*/
+{
+    #logo
+    {
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+    }
+}
 nav ul
 {
    list-style-type: none;
    display: flex;
    flex-direction: row;
    align-items: flex-end;
+   margin: 0;
 }
 nav li
 {    
     margin-right: 3rem;
+    padding-top: 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 nav a
 {
-    color: grey;
     font-weight: 500;
     color: rgb(60, 60, 60);
     text-decoration: none;
 }
+nav li:hover
+{
+    border-top: 2px solid #0065FC;
+    padding-top: 38px;
+}
 nav a:hover
 {
-    color: #0065FC;
-    font-weight: bold;
-    border-top: 2px solid #0065FC;
-    padding-top: 2rem;
+    color:  #0065FC;
 }
 #inscription
 {
@@ -113,7 +145,6 @@ a.inscription:hover
 {
     float: left;
     width:  1em;
-    height: 1.2rem;
     font-size: 110%;
     background-color:rgb(242,242,242);
     padding-top: 1.1rem;
@@ -159,7 +190,6 @@ a.inscription:hover
 #filtres 
 {
     display: flex;
-    vertical-align: middle;
     margin-bottom:1.2rem;
 }
 .barre_de_filtres
@@ -191,7 +221,7 @@ a.inscription:hover
     padding-left: 1.5rem;
     background-color: transparent;
     border-style: solid;
-    border-width: 0.15rem;
+    border-width: 0.2rem;
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     border-top-color: rgb(242,242,242);
@@ -228,18 +258,24 @@ a.inscription:hover
 }
 #partie1
 {
-    max-width: 84rem;
-    display: flex;
+    display: inline-flex;
+}
+@media screen and (max-width: 768px)
+/*smartphones*/
+{
+    #partie1
+    {
+        max-width: 40rem;
+    }
 }
 #hebergements
 {
-    width: 66%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     background-color: rgb(242,242,242);
     border-radius: 1rem;
-    padding-left: 1rem;
+    padding-left: 1.4rem;
     padding-bottom: 0.2rem;
 }
 #hebergements h1
@@ -250,13 +286,21 @@ a.inscription:hover
     padding-top: 1.4rem;
     margin-bottom: 0.3rem;
 }
+@media screen and (max-width: 768px)
+/*smartphones*/
+{
+    #hebergements
+    {
+        width: 100%;
+    }
+}
 #hebergement_1
 {
     background-color: white;
     width: auto;
     height: 12.5rem;
     border-radius: 1.3rem;
-    margin: 1rem;
+    margin: 0.95rem;
     cursor: pointer;
 }
 #hebergement_1 figure
@@ -309,7 +353,7 @@ a.inscription:hover
     width: auto;
     height: 12.5rem;
     border-radius: 1.3rem;
-    margin: 1rem;
+    margin: 0.95rem;
     cursor: pointer;
 }
 #hebergement_2 figure
@@ -362,7 +406,7 @@ a.inscription:hover
     width: auto;
     height: 12.5rem;
     border-radius: 1.3rem;
-    margin: 1rem;
+    margin: 0.95rem;
     cursor: pointer;
 }
 #hebergement_3 figure
@@ -415,7 +459,7 @@ a.inscription:hover
     width: auto;
     height: 12.5rem;
     border-radius: 1.3rem;
-    margin: 1rem;
+    margin: 0.95rem;
     cursor: pointer;
 }
 #hebergement_4 figure
@@ -468,7 +512,7 @@ a.inscription:hover
     width: auto;
     height: 12.5rem;
     border-radius: 1.3rem;
-    margin: 1rem;
+    margin: 0.95rem;
     cursor: pointer;
 }
 #hebergement_5 figure
@@ -521,7 +565,7 @@ a.inscription:hover
     width: auto;
     height: 12.5rem;
     border-radius: 1.3rem;
-    margin: 1rem;
+    margin: 0.95rem;
     cursor: pointer;
 }
 #hebergement_6 figure
@@ -568,11 +612,13 @@ a.inscription:hover
     font-size: 72%;
     margin-left: 0.5rem;
 }
+#afficher h2
+{
+    margin: 0.2rem 0rem 1.5rem 0.5rem;
+}
 #afficher a
 {
-    font-weight: bold;
     color: black;
-    text-decoration: none;
     line-height: 3.4rem;
     margin-left: 1rem;
     cursor: pointer;
@@ -588,8 +634,6 @@ a.inscription:hover
 }
 section aside #populaires
 {
-    flex: 34%;
-    align-items: flex-end;
     position: relative;
     margin-left: 2.5rem;
     background-color: rgb(242,242,242);
@@ -598,6 +642,14 @@ section aside #populaires
     padding-left: 2.3rem;
     padding-right: 2rem;
     padding-bottom: 0.2rem;
+}
+@media screen and (max-width: 768px)
+/*smartphones*/
+{
+    section aside #populaires
+    {
+        width: 100%;
+    }
 }
 #titre_populaires
 {
@@ -777,7 +829,7 @@ section aside #populaires
 /* utilisation de margin négatifs pour forcer l'alignement, voir à terme si possibilité de faire autrement*/
 {
     display: grid;
-    max-width: 84rem;
+    width: auto;
     height: auto;
     margin-top: 2rem;
     margin-left: -2.5rem;
@@ -808,19 +860,19 @@ section aside #populaires
     grid-area: b;
     border-radius: 1rem;
     align-self: start;
-    margin-right: -2.5rem;
+    margin-right: -2.2rem;
     cursor: pointer;
 }
 #activite_1 figure
 {
-    width: 19.5rem;
+    width: 18.7rem;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_1 figure img
 {
-    width: 19.5rem;
+    width: 18.7rem;
     height: 24.5rem;
     object-fit: cover;
     object-position: center;
@@ -847,19 +899,19 @@ section aside #populaires
     border-radius: 1rem;
     align-self: start;
     margin-bottom: -1.8rem;
-    margin-right: -2.5rem;
+    margin-right: -2.2rem;
     cursor: pointer;
 }
 #activite_2 figure
 {
-    width: 19rem;
+    width: 18.7rem;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_2 figure img
 {
-    width: 19rem;
+    width: 18.7rem;
     height: 11.2rem;
     object-fit: cover;
     object-position: center;
@@ -886,18 +938,18 @@ section aside #populaires
     border-radius: 1rem;
     align-self: end;
     cursor: pointer;
-    margin-right: -2.5rem;
+    margin-right: -2.2rem;
 }
 #activite_3 figure
 {
-    width: 19rem;
+    width: 18.7rem;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_3 figure img
 {
-    width: 19rem;
+    width: 18.7rem;
     height: 7rem;
     object-fit: cover;
     object-position: center;
@@ -923,18 +975,18 @@ section aside #populaires
    border-radius: 1rem;
    align-self: start;
    cursor: pointer;
-   margin-right: -2.5rem;
+   margin-right: -2.2rem;
 }
 #activite_4 figure
 {
-    width: 19rem;
+    width: 18.7rem;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_4 figure img
 {
-    width: 19rem;
+    width: 18.7rem;
     height: 24.5rem;
     filter: opacity(85%);
     object-fit: cover;
@@ -965,15 +1017,15 @@ section aside #populaires
 }
 #activite_5 figure
 {
-    width: 19rem;
+    width: 18.7rem;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_5 figure img
 {
-    width: 19rem;
-    height: 8.7rem;
+    width: 18.7rem;
+    height: 8.8rem;
     object-fit: cover;
     object-position: top;
     border-top-left-radius: 1rem;
@@ -1002,14 +1054,14 @@ section aside #populaires
 }
 #activite_6 figure
 {
-    width: 19rem;
+    width: 18.7rem;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_6 figure img
 {
-    width: 19rem;
+    width: 18.7rem;
     height: 9.4rem;
     object-fit: cover;
     object-position: center;
@@ -1034,11 +1086,8 @@ footer
     display: flex;
     width: 100%;
     background-color: rgb(242,242,242);
-    margin-left: -4rem;
-    margin-right: 4rem;
     margin-top: 3rem;
     line-height: 2rem;
-    text-align: left;
     padding-bottom: 3rem;
 }
 footer h1
