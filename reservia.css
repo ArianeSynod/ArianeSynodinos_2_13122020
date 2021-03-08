@@ -10,22 +10,30 @@ body
     margin: 0;
     width: 1440px;
 }
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    body
+    {
+        width: 100%;
+    }
+}
 #bloc_page
 {
     margin: 0 3rem 0 3.5rem;
 }
-@media screen and (max-width: 768px)
+@media all and (max-width: 375px)
 /*smartphones*/
 {
     #bloc_page
     {
-        width: auto;
+        margin: 0.5rem 0 0 0;
     }
 }
 h1
 {
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 h2
 {
@@ -52,33 +60,15 @@ header
     align-items: baseline;
     justify-content: flex-end;
 }
-@media screen and (max-width: 768px)
-/*smartphones*/
-{
-    #header
-    {
-        width: auto;
-    }
-}
 #logo
 {
     position: absolute;
     top: 2.5rem;
-    left: 4rem;
+    left: 3.5rem;
 }
 #logo img
 {
     max-width: 100%;
-}
-@media screen and (max-width: 768px)
-/*smartphones*/
-{
-    #logo
-    {
-        position: absolute;
-        top: 0.5rem;
-        left: 1rem;
-    }
 }
 nav ul
 {
@@ -92,8 +82,8 @@ nav li
 {    
     margin-right: 3rem;
     padding-top: 40px;
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 nav a
 {
@@ -112,7 +102,6 @@ nav a:hover
 }
 #inscription
 {
-    color: #0065FC;
     font-weight: bold;
     padding-top: 2rem;
     cursor: pointer;
@@ -121,10 +110,54 @@ nav a:hover
 a.inscription:link
 {
     text-decoration: none;
+    color: #0065FC;
 }
 a.inscription:hover
 {
     background-color: rgb(242,242,242);
+}
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    header
+    {
+        flex-direction: column;
+    }
+    #logo
+    {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.2rem;
+    }
+    nav
+    {
+        order: 3;
+    }
+    nav ul
+    {
+        padding: 0;
+    }
+    nav li
+    {
+        width: 11.71875rem;
+        margin: 0;
+        text-align: center;
+        padding: 0 0 1rem 0;
+        border-bottom: 3px solid rgb(242,242,242);
+    }
+    nav li:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 0;
+    }
+    #inscription
+    {
+        order: 2;
+        align-self: flex-end;
+        margin-right: 2rem;
+        margin-bottom: 2.5rem;
+    }
 }
 #titre_principal
 {
@@ -139,17 +172,18 @@ a.inscription:hover
    display: inline-block;
    vertical-align: middle;
    height: 4rem;
-   margin-bottom: 0.3rem;
+   margin-bottom: 1rem;
 }
 #map_marker
 {
     float: left;
-    width:  1em;
+    width:  1rem;
+    height: 1.3rem;
     font-size: 110%;
     background-color:rgb(242,242,242);
-    padding-top: 1.1rem;
+    padding-top: 1.05rem;
     padding-right: 1rem;
-    padding-bottom: 0.9rem;
+    padding-bottom: 0.85rem;
     padding-left: 1.2rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -159,7 +193,7 @@ a.inscription:hover
     font-weight: 600;
     font-size: 1.1rem;
     height: 3.2rem;
-    width:  14.35rem;
+    width:  14.8rem;
     padding-left: 1rem;
     border-style: solid;
     border-width: 0.1rem;
@@ -175,18 +209,52 @@ a.inscription:hover
     font-weight: 600;
     height: 3.2rem;
     background-color: #0065FC;
-    margin-left: -0.5rem;
+    margin-left: -0.7rem;
     border-width: 0rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding-right: 1.1rem;
     padding-left: 1.1rem;
     cursor: pointer;
- }
- .bouton_search:hover
- {
+}
+.bouton_search:hover
+{
     color: #deebff;
- }
+}
+.loupe
+{
+    display: none;
+}
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    #bloc_titre
+    {
+        margin-top: 2rem;
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+        margin-left: 1.2rem;
+    }
+    .bouton_search
+    {
+        display: none;
+    }
+    .loupe
+    {
+        display: initial;
+        font-size: 1rem;
+        color: white;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: #0065FC;
+        margin-left: -1.2rem;
+        border-width: 0rem;
+        border-radius: 1rem;
+        padding-right: 1.1rem;
+        padding-left: 1.1rem;
+        cursor: pointer;
+    }
+}
 #filtres 
 {
     display: flex;
@@ -216,17 +284,17 @@ a.inscription:hover
     font-size: 1.1rem;
     font-weight: bold;
     height: 3.2rem;
-    margin-left: -1.2rem;
+    margin-left: -1.3rem;
     padding-right: 1.2rem;
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
     background-color: transparent;
     border-style: solid;
-    border-width: 0.2rem;
+    border-width: 0.15rem;
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-    border-top-color: rgb(242,242,242);
-    border-bottom-color: rgb(242,242,242);
-    border-right-color: rgb(242,242,242);
+    border-top-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-bottom-color:rgb(221, 221, 221);
     border-left-color: transparent;
     cursor: pointer;
 }
@@ -236,36 +304,64 @@ a.inscription:hover
 }
 #information_ville
 {
-    display: flex;
+    display: inline-flex;
     align-items: baseline;
     margin-bottom: 1.4rem;
 }
 #fa-info
 {
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    font-size: 0.6rem;
-    width: 1.2rem;
-    height: 1.2rem;
+    font-size: 70%;
+    width: 22.4px;
+    height: 22.4px;
     color: #0065FC;
     border: 1px solid #d9d9d9;
     border-radius: 100%;
+    margin-right: 0.1rem;
 }
 #information_ville h3
 {
-    margin-left: 0.5rem;
+    font-size: 100%;
+    margin-left: 0.6rem;
+}
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    #filtres 
+    {
+        display: inline;
+        margin-bottom:1.2rem;
+    }
+    .icones_filtres
+    {
+        margin: 0 0 1rem 0.1rem;
+        font-size: 1.2rem;
+        color: #0065FC;
+        background-color: #deebff;
+        padding-top: 1rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 1rem;
+        border-radius: 2.2rem;
+    }
+    .noms_filtres
+    {
+        font-size: 1rem;
+    }
 }
 #partie1
 {
     display: inline-flex;
 }
-@media screen and (max-width: 768px)
+@media all and (max-width: 375px)
 /*smartphones*/
 {
     #partie1
     {
-        max-width: 40rem;
+        flex-direction: column-reverse;
     }
 }
 #hebergements
@@ -273,7 +369,7 @@ a.inscription:hover
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-color: rgb(242,242,242);
+    background-color: rgb(240, 240, 240);
     border-radius: 1rem;
     padding-left: 1.4rem;
     padding-bottom: 0.2rem;
@@ -285,14 +381,6 @@ a.inscription:hover
     font-size: 135%;
     padding-top: 1.4rem;
     margin-bottom: 0.3rem;
-}
-@media screen and (max-width: 768px)
-/*smartphones*/
-{
-    #hebergements
-    {
-        width: 100%;
-    }
 }
 #hebergement_1
 {
@@ -612,9 +700,169 @@ a.inscription:hover
     font-size: 72%;
     margin-left: 0.5rem;
 }
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    #hebergements
+    {
+        flex-direction: column;
+        background-color: initial;
+        padding-left: 0rem;
+        margin: 0rem;
+    }
+    #hebergements h1
+    {
+        margin-bottom: 1.2rem;
+        margin-left: 1.5rem;
+    }
+    #hebergement_1
+    {
+        height: 12.3rem;
+        margin: 0 0 0.5rem 0;
+    }
+    #hebergement_1 figure
+    {
+        max-width: 20.3rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_1 figure img
+    {
+        width: 20.3rem;
+        height: 8rem;
+        margin-top: 0;
+        object-position: center;
+    }
+    #hebergement_1 figure figcaption p
+    {
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_2
+    {
+        height: 12.3rem;
+        margin: 0 0 0.5rem 0rem;
+    }
+    #hebergement_2 figure
+    {
+        max-width: 20.3rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_2 figure img
+    {
+        width: 20.3rem;
+        height: 8rem;
+        margin-top: 0;
+        object-position: center;
+    }
+    #hebergement_2 figure figcaption p
+    {
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_3
+    {
+        height: 12.3rem;
+        margin: 0 0 0.5rem 0rem;
+    }
+    #hebergement_3 figure
+    {
+        max-width: 20.3rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_3 figure img
+    {
+        width: 20.3rem;
+        height: 8rem;
+        margin-top: 0;
+        object-position: center;
+    }
+    #hebergement_3 figure figcaption p
+    {
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_4
+    {
+        height: 12.3rem;
+        margin: 0 0 0.5rem 0rem;
+    }
+    #hebergement_4 figure
+    {
+        max-width: 20.3rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_4 figure img
+    {
+        width: 20.3rem;
+        height: 8rem;
+        margin-top: 0;
+        object-position: center;
+    }
+    #hebergement_4 figure figcaption p
+    {
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_5
+    {
+        height: 12.3rem;
+        margin: 0 0 0.5rem 0rem;
+    }
+    #hebergement_5 figure
+    {
+        max-width: 20.3rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_5 figure img
+    {
+        width: 20.3rem;
+        height: 8rem;
+        margin-top: 0;
+        object-position: center;
+    }
+    #hebergement_5 figure figcaption p
+    {
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_6
+    {
+        height: 12.3rem;
+        margin: 0 0 0.5rem 0rem;
+    }
+    #hebergement_6 figure
+    {
+        max-width: 20.3rem;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_6 figure img
+    {
+        width: 20.3rem;
+        height: 8rem;
+        margin-top: 0;
+        object-position: center;
+    }
+    #hebergement_6 figure figcaption p
+    {
+        margin-bottom: 0.4rem;
+    }
+}
 #afficher h2
 {
-    margin: 0.2rem 0rem 1.5rem 0.5rem;
+    margin: 0.7rem 0rem 1.5rem 0.5rem;
 }
 #afficher a
 {
@@ -643,14 +891,6 @@ section aside #populaires
     padding-right: 2rem;
     padding-bottom: 0.2rem;
 }
-@media screen and (max-width: 768px)
-/*smartphones*/
-{
-    section aside #populaires
-    {
-        width: 100%;
-    }
-}
 #titre_populaires
 {
     display: flex;
@@ -661,7 +901,7 @@ section aside #populaires
     align-items: flex-end;
     font-size: 1.45rem;
     padding-top: 1.2rem;
-    padding-right: 0.2rem;
+    padding-right: 0.8rem;
  }
 #populaires h1
 {
@@ -825,6 +1065,64 @@ section aside #populaires
     font-size: 66%;
     margin-top: 2.2rem;
 }
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    section aside #populaires
+    {
+        width: auto;
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-right: 0.938rem;
+        padding-bottom: 2.2rem;
+        padding-left: 1rem;
+        border-radius: 0rem;
+    }
+    #titre_populaires h1
+    {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    #populaire_1 
+    {
+        width: 21rem;
+        margin-bottom: 0rem;
+    }
+    #populaire_1 figure
+    {
+        margin: 0;
+    }
+    #populaire_1 p
+    {
+        margin: 0.65rem;
+    }
+    #populaire_2
+    {
+        width: 21rem;
+        margin-bottom: 0rem;
+    }
+    #populaire_2 figure
+    {
+        margin: 0;
+    }
+    #populaire_2 p
+    {
+        margin: 0.65rem;
+    }
+    #populaire_3
+    {
+        width: 21rem;
+        margin-bottom: 0rem;    
+    }
+    #populaire_3 figure
+    {
+        margin: 0;
+    }
+    #populaire_3 p
+    {
+        margin: 0.65rem;
+    }
+}
 #activites
 /* utilisation de margin négatifs pour forcer l'alignement, voir à terme si possibilité de faire autrement*/
 {
@@ -849,7 +1147,7 @@ section aside #populaires
     text-align: left;
     margin-left: 2.5rem;
     padding-top: 0.5rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
 }
 #activites h2
 {
@@ -1081,6 +1379,147 @@ section aside #populaires
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    #activites
+    {
+        margin-top: 0rem;
+        margin-left: -1.8rem;
+        margin-bottom: 0rem;
+        grid-template-columns: 21rem;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g";
+    }
+    #activites h1
+    {
+        width: auto;
+        margin-left: 3rem;
+        padding-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+    #activite_1
+    {
+        margin:0 0 0 0.4rem;
+    }
+    #activite_1 p
+    {
+        margin:0.2rem;
+    }
+    #activite_1 figure
+    {
+        width: 21rem;
+        margin-top: 0rem;
+        margin-bottom: 1.3rem;
+    }
+    #activite_1 figure img
+    {
+        width: 21rem;
+        height: 8.5rem;
+    }
+    #activite_2
+    {
+        margin:0 0 0 0.4rem;
+    }
+    #activite_2 p
+    {
+        margin: 0.2rem;
+    }
+    #activite_2 figure
+    {
+        width: 21rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    #activite_2 figure img
+    {
+        width: 21rem;
+        height: 8.5rem;
+    }
+    #activite_3
+    {
+        margin:0 0 0 0.4rem;
+    }
+    #activite_3 p
+    {
+        margin: 0.2rem;
+    }
+    #activite_3 figure
+    {
+        width: 21rem;
+        margin-top: 0rem;
+        margin-bottom: 1.3rem;
+    }
+    #activite_3 figure img
+    {
+        width: 21rem;
+        height: 8.5rem;
+    }
+    #activite_4
+    {
+        margin:0 0 0 0.4rem;
+    }
+    #activite_4 p
+    {
+        margin: 0.2rem;
+    }
+    #activite_4 figure
+    {
+        width: 21rem;
+        margin-top: 0rem;
+        margin-bottom: 1.3rem;
+    }
+    #activite_4 figure img
+    {
+        width: 21rem;
+        height: 8.5rem;
+    }
+    #activite_5
+    {
+        margin:0 0 0 0.4rem;
+    }
+    #activite_5 p
+    {
+        margin: 0.2rem;
+    }
+    #activite_5 figure
+    {
+        width: 21rem;
+        margin-top: 0rem;
+        margin-bottom: 1.3rem;
+    }
+    #activite_5 figure img
+    {
+        width: 21rem;
+        height: 8.5rem;
+    }
+    #activite_6
+    {
+        margin:0 0 0 0.4rem;
+    }
+    #activite_6 p
+    {
+        margin: 0.2rem;
+    }
+    #activite_6 figure
+    {
+        width: 21rem;
+        margin-top: 0rem;
+        margin-bottom: 1.3rem;
+    }
+    #activite_6 figure img
+    {
+        width: 21rem;
+        height: 8.5rem;
+    }
+}
 footer
 {
     display: flex;
@@ -1105,7 +1544,6 @@ footer h1
 {
     margin-bottom: 1.4rem;
 }
-
 #menu_a_propos ul
 {
     list-style: none;
@@ -1173,4 +1611,33 @@ footer h1
 {
     color: #0065FC;
     font-weight: bold;
+}
+@media all and (max-width: 375px)
+/*smartphones*/
+{
+    footer
+    {
+        flex-direction: column;
+        width: auto;
+        margin-top: 1.8rem;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+    }
+    #a_propos
+    {
+        width: auto;
+        margin-left: 1.6rem;
+    }
+    #nos_hebergements
+    {
+        width: auto;
+        margin-top: 1.5rem;
+        margin-left: 1.6rem;
+    }
+    #assistance
+    {
+        width: auto;
+        margin-top: 1.5rem;
+        margin-left: 1.6rem;
+    }
 }
