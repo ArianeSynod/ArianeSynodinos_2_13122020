@@ -145,7 +145,7 @@ a.inscription:hover
         padding: 0 0 1rem 0;
         border-bottom: 3px solid rgb(242,242,242);
     }
-    nav li:hover
+       nav li:hover
     {
         border-top: none;
         border-bottom: 3px solid #0065FC;
@@ -391,18 +391,23 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
+#hebergement_1 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #hebergement_1 figure
 {
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    padding: 0.3rem;
     height: auto;
+    padding: 0.3rem;
     margin: auto;
 }
 #hebergement_1 figure img 
 {
-    margin-top: -0.9rem;
+    margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
@@ -415,7 +420,7 @@ a.inscription:hover
     background-color: white;
     line-height: 45%;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -444,18 +449,23 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
+#hebergement_2 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #hebergement_2 figure
 {
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    padding: 0.3rem;
     height: auto;
+    padding: 0.3rem;
     margin: auto;
 }
 #hebergement_2 figure img 
 {
-    margin-top: -0.9rem;
+    margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
@@ -468,7 +478,7 @@ a.inscription:hover
     background-color: white;
     line-height: 45%;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -497,18 +507,23 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
+#hebergement_3 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #hebergement_3 figure
 {
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    padding: 0.3rem;
     height: auto;
+    padding: 0.3rem;
     margin: auto;
 }
 #hebergement_3 figure img 
 {
-    margin-top: -0.9rem;
+    margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
@@ -521,7 +536,7 @@ a.inscription:hover
     background-color: white;
     line-height: 45%;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -550,18 +565,23 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
+#hebergement_4 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #hebergement_4 figure
 {
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    padding: 0.3rem;
     height: auto;
+    padding: 0.3rem;
     margin: auto;
 }
 #hebergement_4 figure img 
 {
-    margin-top: -0.9rem;
+    margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
@@ -574,7 +594,7 @@ a.inscription:hover
     background-color: white;
     line-height: 45%;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -603,18 +623,23 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
+#hebergement_5 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #hebergement_5 figure
 {
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    padding: 0.3rem;
     height: auto;
+    padding: 0.3rem;
     margin: auto;
 }
 #hebergement_5 figure img 
 {
-    margin-top: -0.9rem;
+    margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
@@ -627,7 +652,7 @@ a.inscription:hover
     background-color: white;
     line-height: 45%;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -656,18 +681,23 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
+#hebergement_6 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #hebergement_6 figure
 {
     display: flex;
     flex-flow: column;
     max-width: 15rem;
-    padding: 0.3rem;
     height: auto;
+    padding: 0.3rem;
     margin: auto;
 }
 #hebergement_6 figure img 
 {
-    margin-top: -0.9rem;
+    margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
@@ -680,7 +710,7 @@ a.inscription:hover
     background-color: white;
     line-height: 45%;
     text-align: left;
-    margin-top: -1rem;
+    margin-top: -1.4rem;
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -718,12 +748,11 @@ a.inscription:hover
     #hebergement_1
     {
         height: 12.3rem;
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.2rem 0;
     }
     #hebergement_1 figure
     {
         max-width: 20.3rem;
-        height: auto;
         border-radius: 1rem;
         box-shadow: 0px 4px 4px 4px rgb(242,242,242);
         margin: 0 0 0 1.4rem;
@@ -732,7 +761,6 @@ a.inscription:hover
     {
         width: 20.3rem;
         height: 8rem;
-        margin-top: 0;
         object-position: center;
     }
     #hebergement_1 figure figcaption p
@@ -742,12 +770,11 @@ a.inscription:hover
     #hebergement_2
     {
         height: 12.3rem;
-        margin: 0 0 0.5rem 0rem;
+        margin: 0 0 0.2rem 0rem;
     }
     #hebergement_2 figure
     {
         max-width: 20.3rem;
-        height: auto;
         border-radius: 1rem;
         box-shadow: 0px 4px 4px 4px rgb(242,242,242);
         margin: 0 0 0 1.4rem;
@@ -756,7 +783,6 @@ a.inscription:hover
     {
         width: 20.3rem;
         height: 8rem;
-        margin-top: 0;
         object-position: center;
     }
     #hebergement_2 figure figcaption p
@@ -766,12 +792,11 @@ a.inscription:hover
     #hebergement_3
     {
         height: 12.3rem;
-        margin: 0 0 0.5rem 0rem;
+        margin: 0 0 0.2rem 0rem;
     }
     #hebergement_3 figure
     {
         max-width: 20.3rem;
-        height: auto;
         border-radius: 1rem;
         box-shadow: 0px 4px 4px 4px rgb(242,242,242);
         margin: 0 0 0 1.4rem;
@@ -780,7 +805,6 @@ a.inscription:hover
     {
         width: 20.3rem;
         height: 8rem;
-        margin-top: 0;
         object-position: center;
     }
     #hebergement_3 figure figcaption p
@@ -790,12 +814,11 @@ a.inscription:hover
     #hebergement_4
     {
         height: 12.3rem;
-        margin: 0 0 0.5rem 0rem;
+        margin: 0 0 0.2rem 0rem;
     }
     #hebergement_4 figure
     {
         max-width: 20.3rem;
-        height: auto;
         border-radius: 1rem;
         box-shadow: 0px 4px 4px 4px rgb(242,242,242);
         margin: 0 0 0 1.4rem;
@@ -804,7 +827,6 @@ a.inscription:hover
     {
         width: 20.3rem;
         height: 8rem;
-        margin-top: 0;
         object-position: center;
     }
     #hebergement_4 figure figcaption p
@@ -814,12 +836,11 @@ a.inscription:hover
     #hebergement_5
     {
         height: 12.3rem;
-        margin: 0 0 0.5rem 0rem;
+        margin: 0 0 0.2rem 0rem;
     }
     #hebergement_5 figure
     {
         max-width: 20.3rem;
-        height: auto;
         border-radius: 1rem;
         box-shadow: 0px 4px 4px 4px rgb(242,242,242);
         margin: 0 0 0 1.4rem;
@@ -828,7 +849,6 @@ a.inscription:hover
     {
         width: 20.3rem;
         height: 8rem;
-        margin-top: 0;
         object-position: center;
     }
     #hebergement_5 figure figcaption p
@@ -838,12 +858,11 @@ a.inscription:hover
     #hebergement_6
     {
         height: 12.3rem;
-        margin: 0 0 0.5rem 0rem;
+        margin: 0 0 0.2rem 0rem;
     }
     #hebergement_6 figure
     {
         max-width: 20.3rem;
-        height: auto;
         border-radius: 1rem;
         box-shadow: 0px 4px 4px 4px rgb(242,242,242);
         margin: 0 0 0 1.4rem;
@@ -852,7 +871,6 @@ a.inscription:hover
     {
         width: 20.3rem;
         height: 8rem;
-        margin-top: 0;
         object-position: center;
     }
     #hebergement_6 figure figcaption p
@@ -894,13 +912,13 @@ section aside #populaires
 #titre_populaires
 {
     display: flex;
-    margin-bottom: -0.6rem;
+    margin-bottom: 0.3rem;
 }
 .fa-chart-line
 {
     align-items: flex-end;
     font-size: 1.45rem;
-    padding-top: 1.2rem;
+    padding-top: 1.4rem;
     padding-right: 0.8rem;
  }
 #populaires h1
@@ -918,6 +936,11 @@ section aside #populaires
     cursor: pointer;
     margin-bottom: 2rem;
     margin-right: 0.5rem;
+}
+#populaire_1 a
+{
+    text-decoration: none;
+    color: initial;
 }
 #populaire_1 figure
 {
@@ -971,6 +994,11 @@ section aside #populaires
     margin-bottom: 2rem;
     margin-right: 0.5rem;
 }
+#populaire_2 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #populaire_2 figure
 {
     display: flex;
@@ -1023,6 +1051,11 @@ section aside #populaires
     margin-bottom: 2rem;
     margin-right: 0.5rem;
 }
+#populaire_3 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #populaire_3 figure
 {
     display: flex;
@@ -1074,19 +1107,14 @@ section aside #populaires
         margin: 0;
         padding-top: 1.5rem;
         padding-right: 0.938rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 1.7rem;
         padding-left: 1rem;
         border-radius: 0rem;
-    }
-    #titre_populaires h1
-    {
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
     }
     #populaire_1 
     {
         width: 21rem;
-        margin-bottom: 0rem;
+        margin-bottom: 0.6rem;
     }
     #populaire_1 figure
     {
@@ -1094,12 +1122,12 @@ section aside #populaires
     }
     #populaire_1 p
     {
-        margin: 0.65rem;
+        margin: 0.65rem 0.65rem 0.65rem 0;
     }
     #populaire_2
     {
         width: 21rem;
-        margin-bottom: 0rem;
+        margin-bottom: 0.6rem;
     }
     #populaire_2 figure
     {
@@ -1107,12 +1135,12 @@ section aside #populaires
     }
     #populaire_2 p
     {
-        margin: 0.65rem;
+        margin: 0.65rem 0.65rem 0.65rem 0;
     }
     #populaire_3
     {
         width: 21rem;
-        margin-bottom: 0rem;    
+        margin-bottom: 0.6rem;  
     }
     #populaire_3 figure
     {
@@ -1120,7 +1148,7 @@ section aside #populaires
     }
     #populaire_3 p
     {
-        margin: 0.65rem;
+        margin: 0.65rem 0.65rem 0.65rem 0;
     }
 }
 #activites
@@ -1161,6 +1189,11 @@ section aside #populaires
     margin-right: -2.2rem;
     cursor: pointer;
 }
+#activite_1 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #activite_1 figure
 {
     width: 18.7rem;
@@ -1200,6 +1233,11 @@ section aside #populaires
     margin-right: -2.2rem;
     cursor: pointer;
 }
+#activite_2 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #activite_2 figure
 {
     width: 18.7rem;
@@ -1238,6 +1276,11 @@ section aside #populaires
     cursor: pointer;
     margin-right: -2.2rem;
 }
+#activite_3 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #activite_3 figure
 {
     width: 18.7rem;
@@ -1274,6 +1317,11 @@ section aside #populaires
    align-self: start;
    cursor: pointer;
    margin-right: -2.2rem;
+}
+#activite_4 a
+{
+    text-decoration: none;
+    color: initial;
 }
 #activite_4 figure
 {
@@ -1313,6 +1361,11 @@ section aside #populaires
     align-self: start;
     cursor: pointer;
 }
+#activite_5 a
+{
+    text-decoration: none;
+    color: initial;
+}
 #activite_5 figure
 {
     width: 18.7rem;
@@ -1349,6 +1402,11 @@ section aside #populaires
     border-radius: 1rem;
     align-self: end;
     cursor: pointer;
+}
+#activite_6 a
+{
+    text-decoration: none;
+    color: initial;
 }
 #activite_6 figure
 {
