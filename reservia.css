@@ -8,21 +8,29 @@ body
 {
     font-family: Raleway, Arial, Helvetica, sans-serif;
     margin: 0;
-    width: 1440px;
+    max-width: 1440px;
 }
-@media all and (max-width: 375px)
-/*smartphones*/
+@media all and (min-width: 200px) and (max-width: 1160px)
+/*smartphones & tablettes*/
 {
     body
     {
-        width: 100%;
+        max-width: 100%;
     }
 }
 #bloc_page
 {
-    margin: 0 3rem 0 3.5rem;
+    margin: 0rem 3rem 0 3.2em;
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 750px) and (max-width: 1160px)
+/*tablettes*/
+{
+    #bloc_page
+    {
+        margin: 0 0.5rem 0 1rem;
+    }
+}
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     #bloc_page
@@ -63,7 +71,7 @@ header
 #logo
 {
     position: absolute;
-    top: 2.5rem;
+    top: 2.8rem;
     left: 3.5rem;
 }
 #logo img
@@ -81,7 +89,7 @@ nav ul
 nav li
 {    
     margin-right: 3rem;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -94,7 +102,6 @@ nav a
 nav li:hover
 {
     border-top: 2px solid #0065FC;
-    padding-top: 38px;
 }
 nav a:hover
 {
@@ -105,6 +112,7 @@ nav a:hover
     font-weight: bold;
     padding-top: 2rem;
     cursor: pointer;
+    margin-right: 2rem;
     margin-bottom: 3rem;
 }
 a.inscription:link
@@ -116,12 +124,26 @@ a.inscription:hover
 {
     background-color: rgb(242,242,242);
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 750px) and (max-width: 1160px)
+/*tablettes*/
+{
+    #logo
+    {
+        top: 2.2rem;
+        left: 2rem;
+    }
+    #inscription
+    {
+        margin-right: 1.5rem;
+    }
+}
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     header
     {
         flex-direction: column;
+        width: 100%;
     }
     #logo
     {
@@ -132,6 +154,9 @@ a.inscription:hover
     nav
     {
         order: 3;
+        align-self: flex-end;
+        box-sizing: border-box;
+        width: 100%;
     }
     nav ul
     {
@@ -139,7 +164,7 @@ a.inscription:hover
     }
     nav li
     {
-        width: 11.71875rem;
+        width: 50%;
         margin: 0;
         text-align: center;
         padding: 0 0 1rem 0;
@@ -225,7 +250,19 @@ a.inscription:hover
 {
     display: none;
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 750px) and (max-width: 1160px)
+/*tablettes*/
+{
+    #bloc_titre
+    {
+        margin-top: 2rem;
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+        margin-left: 1.2rem;
+    }
+}
+
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     #bloc_titre
@@ -255,14 +292,27 @@ a.inscription:hover
         cursor: pointer;
     }
 }
+@media all and (max-width: 374px)
+/*petits smartphones*/
+{
+    #barre_de_recherche
+    {
+        font-size: 0.95rem;
+        height: 3.2rem;
+        width:  11rem;
+    }
+}
 #filtres 
 {
     display: flex;
-    margin-bottom:1.2rem;
+
+    margin-bottom:0.7rem;
 }
 .barre_de_filtres
 {    
     display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
 }
 .icones_filtres
 {
@@ -327,7 +377,7 @@ a.inscription:hover
     font-size: 100%;
     margin-left: 0.6rem;
 }
-@media all and (max-width: 375px)
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     #filtres 
@@ -337,7 +387,7 @@ a.inscription:hover
     }
     .icones_filtres
     {
-        margin: 0 0 1rem 0.1rem;
+        margin: 0 0 0.2rem 0.1rem;
         font-size: 1.2rem;
         color: #0065FC;
         background-color: #deebff;
@@ -356,7 +406,16 @@ a.inscription:hover
 {
     display: inline-flex;
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 750px) and (max-width: 1160px)
+/*tablettes*/
+{
+    #partie1
+    {
+        display:inline-flex;
+        flex-direction: column-reverse;
+    }
+}
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     #partie1
@@ -371,13 +430,14 @@ a.inscription:hover
     flex-wrap: wrap;
     background-color: rgb(240, 240, 240);
     border-radius: 1rem;
-    padding-left: 1.4rem;
     padding-bottom: 0.2rem;
+    padding-left: 1.4rem;
+
 }
 #hebergements h1
 {
     margin-left: 1rem;
-    width: 100%;
+    width: 80%;
     font-size: 135%;
     padding-top: 1.4rem;
     margin-bottom: 0.3rem;
@@ -403,6 +463,8 @@ a.inscription:hover
     max-width: 15rem;
     height: auto;
     padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
     margin: auto;
 }
 #hebergement_1 figure img 
@@ -461,6 +523,8 @@ a.inscription:hover
     max-width: 15rem;
     height: auto;
     padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
     margin: auto;
 }
 #hebergement_2 figure img 
@@ -519,6 +583,8 @@ a.inscription:hover
     max-width: 15rem;
     height: auto;
     padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
     margin: auto;
 }
 #hebergement_3 figure img 
@@ -577,7 +643,8 @@ a.inscription:hover
     max-width: 15rem;
     height: auto;
     padding: 0.3rem;
-    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);    margin: auto;
 }
 #hebergement_4 figure img 
 {
@@ -635,6 +702,8 @@ a.inscription:hover
     max-width: 15rem;
     height: auto;
     padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
     margin: auto;
 }
 #hebergement_5 figure img 
@@ -693,6 +762,8 @@ a.inscription:hover
     max-width: 15rem;
     height: auto;
     padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
     margin: auto;
 }
 #hebergement_6 figure img 
@@ -730,154 +801,6 @@ a.inscription:hover
     font-size: 72%;
     margin-left: 0.5rem;
 }
-@media all and (max-width: 375px)
-/*smartphones*/
-{
-    #hebergements
-    {
-        flex-direction: column;
-        background-color: initial;
-        padding-left: 0rem;
-        margin: 0rem;
-    }
-    #hebergements h1
-    {
-        margin-bottom: 1.2rem;
-        margin-left: 1.5rem;
-    }
-    #hebergement_1
-    {
-        height: 12.3rem;
-        margin: 0 0 0.2rem 0;
-    }
-    #hebergement_1 figure
-    {
-        max-width: 20.3rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_1 figure img
-    {
-        width: 20.3rem;
-        height: 8rem;
-        object-position: center;
-    }
-    #hebergement_1 figure figcaption p
-    {
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_2
-    {
-        height: 12.3rem;
-        margin: 0 0 0.2rem 0rem;
-    }
-    #hebergement_2 figure
-    {
-        max-width: 20.3rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_2 figure img
-    {
-        width: 20.3rem;
-        height: 8rem;
-        object-position: center;
-    }
-    #hebergement_2 figure figcaption p
-    {
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_3
-    {
-        height: 12.3rem;
-        margin: 0 0 0.2rem 0rem;
-    }
-    #hebergement_3 figure
-    {
-        max-width: 20.3rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_3 figure img
-    {
-        width: 20.3rem;
-        height: 8rem;
-        object-position: center;
-    }
-    #hebergement_3 figure figcaption p
-    {
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_4
-    {
-        height: 12.3rem;
-        margin: 0 0 0.2rem 0rem;
-    }
-    #hebergement_4 figure
-    {
-        max-width: 20.3rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_4 figure img
-    {
-        width: 20.3rem;
-        height: 8rem;
-        object-position: center;
-    }
-    #hebergement_4 figure figcaption p
-    {
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_5
-    {
-        height: 12.3rem;
-        margin: 0 0 0.2rem 0rem;
-    }
-    #hebergement_5 figure
-    {
-        max-width: 20.3rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_5 figure img
-    {
-        width: 20.3rem;
-        height: 8rem;
-        object-position: center;
-    }
-    #hebergement_5 figure figcaption p
-    {
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_6
-    {
-        height: 12.3rem;
-        margin: 0 0 0.2rem 0rem;
-    }
-    #hebergement_6 figure
-    {
-        max-width: 20.3rem;
-        border-radius: 1rem;
-        box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_6 figure img
-    {
-        width: 20.3rem;
-        height: 8rem;
-        object-position: center;
-    }
-    #hebergement_6 figure figcaption p
-    {
-        margin-bottom: 0.4rem;
-    }
-}
 #afficher h2
 {
     margin: 0.7rem 0rem 1.5rem 0.5rem;
@@ -898,6 +821,323 @@ a.inscription:hover
     color: #0065FC;
     font-weight: bold;
 }
+@media all and (min-width: 750px) and (max-width: 1160px)
+/*tablettes*/
+{
+    #hebergements
+    {
+        margin: 2rem 0 0 0;
+        padding: 0 0 1.5% 1.5%;
+    }
+    #hebergements h1
+    {
+        margin-left: 1.5rem;
+        width: 100%;
+        font-size: 135%;
+        padding-top: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    #hebergement_1
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:11.5rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #hebergement_1 figure
+    {
+        max-width: none;
+        width: auto;
+    }
+    #hebergement_1 figure img 
+    {
+        width:100%;
+        height: 7.5rem;
+    }
+    #hebergement_2
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:11.5rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #hebergement_2 figure
+    {
+        max-width: none;
+        width:auto;
+    }
+    #hebergement_2 figure img 
+    {
+        width:100%;
+        height: 7.5rem;
+    }
+    #hebergement_3
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:11.5rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #hebergement_3 figure
+    {
+        max-width: none;
+        width:auto;
+    }
+    #hebergement_3 figure img 
+    {
+        width:100%;
+        height: 7.5rem;
+    }
+    #hebergement_4
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:11.5rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #hebergement_4 figure
+    {
+        max-width: none;
+        width:auto;
+    }
+    #hebergement_4 figure img 
+    {
+        width:100%;
+        height: 7.5rem;
+    }
+    #hebergement_5
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:11.5rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #hebergement_5 figure
+    {
+        max-width: none;
+        width:auto;
+    }
+    #hebergement_5 figure img 
+    {
+        width:100%;
+        height: 7.5rem;
+    }
+    #hebergement_6
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:11.5rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #hebergement_6 figure
+    {
+        max-width: none;
+        width:auto;
+    }
+    #hebergement_6 figure img 
+    {
+        width:100%;
+        height: 7.5rem;
+    }
+    #afficher h2
+    {
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    #afficher a
+    {
+        line-height: 2.5rem;
+    }
+}
+@media all and (max-width: 749px)
+/*smartphones*/
+{
+    #hebergements
+    {
+        flex-direction: column;
+        background-color: initial;
+        padding-left: 0rem;
+        margin: 0rem;
+    }
+    #hebergements h1
+    {
+        margin-bottom: 1.2rem;
+        margin-left: 1.5rem;
+    }
+    #hebergement_1
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 92%;
+        height: 12.3rem;
+        margin: 0 0 0.8rem 0;
+    }
+    #hebergement_1 figure
+    {
+        max-width: 100%;
+        box-shadow: 4px 4px 4px 4px rgb(234,234,234);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_1 figure img
+    {
+        display: flex;
+        width: 100%;
+        height: 8.6rem;
+        object-position: center;
+    }
+    #hebergement_1 figure figcaption p
+    {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_2
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 92%;
+        height: 12.3rem;
+        margin: 0 0 0.8rem 0;
+    }
+    #hebergement_2 figure
+    {
+        max-width: 100%;
+                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_2 figure img
+    {
+        display: flex;
+        width: 100%;
+        height: 8.6rem;
+        object-position: center;
+    }
+    #hebergement_2 figure figcaption p
+    {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_3
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 92%;
+        height: 12.3rem;
+        margin: 0 0 0.8rem 0;
+    }
+    #hebergement_3 figure
+    {
+        max-width: 100%;
+        box-shadow: 4px 4px 4px 4px rgb(234,234,234);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_3 figure img
+    {
+        display: flex;
+        width: 100%;
+        height: 8.6rem;
+        object-position: center;
+    }
+    #hebergement_3 figure figcaption p
+    {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_4
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 92%;
+        height: 12.3rem;
+        margin: 0 0 0.8rem 0;
+    }
+    #hebergement_4 figure
+    {
+        max-width: 100%;
+                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_4 figure img
+    {
+        display: flex;
+        width: 100%;
+        height: 8.6rem;
+        object-position: center;
+    }
+    #hebergement_4 figure figcaption p
+    {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_5
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 92%;
+        height: 12.3rem;
+        margin: 0 0 0.8rem 0;
+    }
+    #hebergement_5 figure
+    {
+        max-width: 100%;
+                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_5 figure img
+    {
+        display: flex;
+        width: 100%;
+        height: 8.6rem;
+        object-position: center;
+    }
+    #hebergement_5 figure figcaption p
+    {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+    #hebergement_6
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 92%;
+        height: 12.3rem;
+        margin: 0 0 0.8rem 0;
+    }
+    #hebergement_6 figure
+    {
+        max-width: 100%;
+                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
+        margin: 0 0 0 1.4rem;
+    }
+    #hebergement_6 figure img
+    {
+        display: flex;
+        width: 100%;
+        height: 8.6rem;
+        object-position: center;
+    }
+    #hebergement_6 figure figcaption p
+    {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+}
 section aside #populaires
 {
     position: relative;
@@ -905,9 +1145,9 @@ section aside #populaires
     background-color: rgb(242,242,242);
     border-radius: 1rem;
     padding-top: 1.3rem;
-    padding-left: 2.3rem;
     padding-right: 2rem;
     padding-bottom: 0.2rem;
+    padding-left: 2.3rem;
 }
 #titre_populaires
 {
@@ -916,11 +1156,10 @@ section aside #populaires
 }
 .fa-chart-line
 {
-    align-items: flex-end;
     font-size: 1.45rem;
     padding-top: 1.4rem;
     padding-right: 0.8rem;
- }
+}
 #populaires h1
 {
     align-items: flex-start;
@@ -949,11 +1188,14 @@ section aside #populaires
     padding: 0.3rem;
     height: auto;
     margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
 }
 #populaire_1 figure img 
 {
     width: 10.1rem; 
     height: 8.5rem;
+    flex-shrink: 0;
     object-fit: cover;
     object-position: right;
     border-top-left-radius: 1rem;
@@ -1006,11 +1248,14 @@ section aside #populaires
     padding: 0.3rem;
     height: auto;
     margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
 }
 #populaire_2 figure img 
 {
     width: 10.1rem; 
     height: 8.5rem;
+    flex-shrink: 0;
     object-fit: cover;
     object-position: right;
     border-top-left-radius: 1rem;
@@ -1063,11 +1308,14 @@ section aside #populaires
     padding: 0.3rem;
     height: auto;
     margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
 }
 #populaire_3 figure img 
 {
     width: 10.1rem; 
     height: 8.5rem;
+    flex-shrink: 0;
     object-fit: cover;
     object-position: right;
     border-top-left-radius: 1rem;
@@ -1098,27 +1346,235 @@ section aside #populaires
     font-size: 66%;
     margin-top: 2.2rem;
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 750px) and (max-width: 1160px)
+/*tablettes*/
+{
+    section aside #populaires
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+        margin-left: 0;
+        padding: 0 0 1.5% 1.5%;
+    }
+    #titre_populaires
+    {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .fa-chart-line
+    {
+        padding-top: 1.5rem;
+        padding-right: 2.5rem;
+    }
+    #populaires h1
+    {
+        text-align: left;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #populaire_1 
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height: 12.4rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #populaire_1 figure
+    {
+        flex-flow: column;
+        width: auto;
+    }
+    #populaire_1 figure img 
+    {
+        margin-top: 0;
+        width: 100%;
+        height: 7.5rem;
+        object-fit: cover;
+        object-position: center;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    #populaire_1 figure figcaption
+    {
+        line-height: 45%;
+        margin-top: -1.4rem;
+        margin-right: 0rem;
+        margin-left: 0;
+        padding-left: 0rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius:1rem;
+    }
+    #populaire_1 figure figcaption h2
+    {
+        line-height: 200%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        margin-left: 0.5rem;
+    }
+    #populaire_1 figure figcaption h3
+    {
+        margin-top: 0.6rem;
+        margin-left: 0.5rem;
+    }
+    #populaire_1 figure figcaption p
+    {
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+    #populaire_2 
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height: 12.4rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #populaire_2 figure
+    {
+        flex-flow: column;
+        width: auto;
+    }
+    #populaire_2 figure img 
+    {
+        margin-top: 0;
+        width: 100%;
+        height: 7.5rem;
+        object-fit: cover;
+        object-position: center;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    #populaire_2 figure figcaption
+    {
+        line-height: 45%;
+        margin-top: -1.4rem;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius:1rem;
+    }
+    #populaire_2 figure figcaption h2
+    {
+        line-height: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        margin-left: 0.5rem;
+    }
+    #populaire_2 figure figcaption h3
+    {
+        margin-top: 0.6rem;
+        margin-left: 0.5rem;
+    }
+    #populaire_2 figure figcaption p
+    {
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+    #populaire_3 
+    {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height: 12.4rem;
+        margin: 0.95rem 0 0.95rem 0.95rem;
+    }
+    #populaire_3 figure
+    {
+        flex-flow: column;
+        width: auto;
+    }
+    #populaire_3 figure img 
+    {
+        margin-top: 0;
+        width: 100%;
+        height: 7.5rem;
+        object-fit: cover;
+        object-position: center;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    #populaire_3 figure figcaption
+    {
+        line-height: 45%;
+        margin-top: -1.4rem;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius:1rem;
+    }
+    #populaire_3 figure figcaption h2
+    {
+        line-height: 200%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        margin-left: 0.5rem;
+    }
+    #populaire_3 figure figcaption h3
+    {
+        margin-top: 0.6rem;
+        margin-left: 0.5rem;
+    }
+    #populaire_3 figure figcaption p
+    {
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+}
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     section aside #populaires
     {
-        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
         margin: 0;
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         padding-right: 0.938rem;
         padding-bottom: 1.7rem;
-        padding-left: 1rem;
+        padding-left: 1.2rem;
         border-radius: 0rem;
+    }
+    #titre_populaires
+    {
+        width: 100%;
+        margin-bottom: 0.2rem;
+    }
+    .fa-chart-line
+    {
+        padding-top: 1.5rem;
+        padding-right: 2.8rem;
     }
     #populaire_1 
     {
-        width: 21rem;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 88%;
         margin-bottom: 0.6rem;
     }
     #populaire_1 figure
     {
         margin: 0;
+        width: 100%;
+    }
+    #populaire_1 figure img 
+    {
+        display: flex;
+        margin-top: 0;
+        width: 50%;
+    }
+    #populaire_1 figure figcaption
+    {
+        width: 50%;
+        margin-right: 0;
     }
     #populaire_1 p
     {
@@ -1126,12 +1582,27 @@ section aside #populaires
     }
     #populaire_2
     {
-        width: 21rem;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 88%;
         margin-bottom: 0.6rem;
     }
     #populaire_2 figure
     {
         margin: 0;
+        width: 100%;
+    }
+    #populaire_2 figure img 
+    {
+        display: flex;
+        margin-top: 0;
+        width: 50%;
+    }
+    #populaire_2 figure figcaption
+    {
+        width: 50%;
+        margin-right: 0;
     }
     #populaire_2 p
     {
@@ -1139,12 +1610,27 @@ section aside #populaires
     }
     #populaire_3
     {
-        width: 21rem;
-        margin-bottom: 0.6rem;  
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 88%;
+        margin-bottom: 0.6rem;
     }
     #populaire_3 figure
     {
         margin: 0;
+        width: 100%;
+    }
+    #populaire_3 figure img 
+    {
+        display: flex;
+        margin-top: 0;
+        width: 50%;
+    }
+    #populaire_3 figure figcaption
+    {
+        width: 50%;
+        margin-right: 0;
     }
     #populaire_3 p
     {
@@ -1152,15 +1638,15 @@ section aside #populaires
     }
 }
 #activites
-/* utilisation de margin négatifs pour forcer l'alignement, voir à terme si possibilité de faire autrement*/
 {
     display: grid;
-    width: auto;
+    width: 90.3%;
     height: auto;
+    column-gap: 3.5%;
     margin-top: 2rem;
     margin-left: -2.5rem;
     margin-bottom: 0.5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: 0.2fr 1fr 1fr;
     grid-template-areas: 
         "a m m m"
@@ -1184,6 +1670,7 @@ section aside #populaires
 #activite_1
 {
     grid-area: b;
+    width: 100%;
     border-radius: 1rem;
     align-self: start;
     margin-right: -2.2rem;
@@ -1196,14 +1683,14 @@ section aside #populaires
 }
 #activite_1 figure
 {
-    width: 18.7rem;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_1 figure img
 {
-    width: 18.7rem;
+    width: 100%;
     height: 24.5rem;
     object-fit: cover;
     object-position: center;
@@ -1213,7 +1700,7 @@ section aside #populaires
 #activite_1 figure figcaption
 {
     background-color: white;
-    width: 14rem;
+    width: 90%;
     height: 3rem;
     font-size: 125%;
     font-weight: bold;
@@ -1226,7 +1713,7 @@ section aside #populaires
 #activite_2
 {
     grid-area: c;
-    width: auto;
+    width: 100%;
     border-radius: 1rem;
     align-self: start;
     margin-bottom: -1.8rem;
@@ -1240,14 +1727,14 @@ section aside #populaires
 }
 #activite_2 figure
 {
-    width: 18.7rem;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
+    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
 }
 #activite_2 figure img
 {
-    width: 18.7rem;
+    width: 100%;
     height: 11.2rem;
     object-fit: cover;
     object-position: center;
@@ -1257,7 +1744,7 @@ section aside #populaires
 #activite_2 figure figcaption
 {
     background-color: white;
-    width: 14rem;
+    width: 90%;
     height: 3rem;
     font-weight: bold;
     font-size: 125%;
@@ -1270,7 +1757,7 @@ section aside #populaires
 #activite_3
 {
     grid-area: d;
-    width: auto;
+    width: 100%;
     border-radius: 1rem;
     align-self: end;
     cursor: pointer;
@@ -1283,14 +1770,14 @@ section aside #populaires
 }
 #activite_3 figure
 {
-    width: 18.7rem;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_3 figure img
 {
-    width: 18.7rem;
+    width: 100%;
     height: 7rem;
     object-fit: cover;
     object-position: center;
@@ -1300,7 +1787,7 @@ section aside #populaires
 #activite_3 figure figcaption
 {
     background-color: white;
-    width: 14rem;
+    width: 90%;
     height: 3rem;
     font-size: 125%;
     font-weight: bold;
@@ -1313,10 +1800,11 @@ section aside #populaires
 #activite_4
 {
    grid-area: e;
+   width: 100%;
    border-radius: 1rem;
    align-self: start;
-   cursor: pointer;
    margin-right: -2.2rem;
+   cursor: pointer;
 }
 #activite_4 a
 {
@@ -1325,14 +1813,14 @@ section aside #populaires
 }
 #activite_4 figure
 {
-    width: 18.7rem;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_4 figure img
 {
-    width: 18.7rem;
+    width: 100%;
     height: 24.5rem;
     filter: opacity(85%);
     object-fit: cover;
@@ -1343,7 +1831,7 @@ section aside #populaires
 #activite_4 figure figcaption
 {
     background-color: white;
-    width: 14rem;
+    width: 90%;
     height: 3rem;
     font-size: 125%;
     font-weight: bold;
@@ -1356,7 +1844,7 @@ section aside #populaires
 #activite_5
 {
     grid-area: f;
-    width: auto;
+    width: 100%;
     border-radius: 1rem;
     align-self: start;
     cursor: pointer;
@@ -1368,14 +1856,14 @@ section aside #populaires
 }
 #activite_5 figure
 {
-    width: 18.7rem;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_5 figure img
 {
-    width: 18.7rem;
+    width: 100%;
     height: 8.8rem;
     object-fit: cover;
     object-position: top;
@@ -1385,7 +1873,7 @@ section aside #populaires
 #activite_5 figure figcaption
 {
     background-color: white;
-    width: 14rem;
+    width: 90%;
     height: 3rem;
     font-size: 125%;
     font-weight: bold;
@@ -1398,7 +1886,7 @@ section aside #populaires
 #activite_6
 {
     grid-area: g;
-    width: auto;
+    width: 100%;
     border-radius: 1rem;
     align-self: end;
     cursor: pointer;
@@ -1410,14 +1898,14 @@ section aside #populaires
 }
 #activite_6 figure
 {
-    width: 18.7rem;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
 #activite_6 figure img
 {
-    width: 18.7rem;
+    width: 100%;
     height: 9.4rem;
     object-fit: cover;
     object-position: center;
@@ -1427,7 +1915,7 @@ section aside #populaires
 #activite_6 figure figcaption
 {
     background-color: white;
-    width: 14rem;
+    width: 90%;
     height: 3rem;
     font-size: 125%;
     font-weight: bold;
@@ -1437,15 +1925,162 @@ section aside #populaires
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 801px) and (max-width: 1160px)
+/*grandes tablettes*/
+{
+    #activites
+    {
+        width: 99%;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        margin-left: -2.2rem;
+        margin-bottom: 0rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr;
+        grid-template-areas: 
+        "a m m"
+        "b c d"
+        "e f g";
+    }
+    #activite_1
+    {
+        margin-right: 0;
+    }
+    #activite_1 figure img
+    {
+        height: 11.2rem;
+    }
+    #activite_2
+    {
+        margin-right: 0;
+    }
+    #activite_2 figure img
+    {
+        height: 11.2rem;
+    }
+    #activite_3
+    {
+        margin-right: 0;
+    }
+    #activite_3 figure img
+    {
+        height: 11.2rem;
+    }
+    #activite_4
+    {
+        margin-right: 0;
+    }
+    #activite_4 figure img
+    {
+        height: 11.2rem;
+    }
+    #activite_5
+    {
+        margin-right: 0;
+    }
+    #activite_5 figure img
+    {
+        height: 11.2rem;
+    }
+    #activite_6
+    {
+        margin-right: 0;
+    }
+    #activite_6 figure img
+    {
+        height: 11.2rem;
+    }
+}
+@media all and (min-width: 750px) and (max-width: 800px)
+/*tablettes*/
+{
+    #activites
+    {
+        width: 99.6%;
+        margin-top: 0rem;
+        margin-right: 1rem;
+        margin-left: -1.5rem;
+        margin-bottom: 0rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a m"
+        "b c"
+        "b d"
+        "f e"
+        "g e";
+    }
+    #activites h1
+    {
+        margin-left: 1.5rem;
+        margin-bottom: 0.938rem;
+    }
+    #activite_1 
+    {
+        margin-right: 0;
+    }
+    #activite_1 figure
+    {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+    #activite_2
+    {
+        margin-right: 0;
+    }
+    #activite_2 figure
+    {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+    #activite_3
+    {
+        margin-right: 0;
+    }
+    #activite_3 figure
+    {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+    #activite_4
+    {
+        margin-right: 0;
+    }
+    #activite_4 figure
+    {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+    #activite_5
+    {
+        margin-right: 0;
+    }
+    #activite_5 figure
+    {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+    #activite_6
+    {
+        margin-right: 0;
+    }
+    #activite_6 figure
+    {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 749px)
 /*smartphones*/
 {
     #activites
     {
+        width: 97%;
         margin-top: 0rem;
         margin-left: -1.8rem;
-        margin-bottom: 0rem;
-        grid-template-columns: 21rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "a"
@@ -1465,6 +2100,7 @@ section aside #populaires
     }
     #activite_1
     {
+        width: 90%;
         margin:0 0 0 0.4rem;
     }
     #activite_1 p
@@ -1473,17 +2109,16 @@ section aside #populaires
     }
     #activite_1 figure
     {
-        width: 21rem;
         margin-top: 0rem;
         margin-bottom: 1.3rem;
     }
     #activite_1 figure img
     {
-        width: 21rem;
         height: 8.5rem;
     }
     #activite_2
     {
+        width: 90%;
         margin:0 0 0 0.4rem;
     }
     #activite_2 p
@@ -1492,17 +2127,16 @@ section aside #populaires
     }
     #activite_2 figure
     {
-        width: 21rem;
         margin-top: 0.2rem;
-        margin-bottom: 0.2rem;
+        margin-bottom: 1.3rem;
     }
     #activite_2 figure img
     {
-        width: 21rem;
         height: 8.5rem;
     }
     #activite_3
     {
+        width: 90%;
         margin:0 0 0 0.4rem;
     }
     #activite_3 p
@@ -1511,17 +2145,16 @@ section aside #populaires
     }
     #activite_3 figure
     {
-        width: 21rem;
-        margin-top: 0rem;
+        margin-top: 0.2rem;
         margin-bottom: 1.3rem;
     }
     #activite_3 figure img
     {
-        width: 21rem;
         height: 8.5rem;
     }
     #activite_4
     {
+        width: 90%;
         margin:0 0 0 0.4rem;
     }
     #activite_4 p
@@ -1530,17 +2163,16 @@ section aside #populaires
     }
     #activite_4 figure
     {
-        width: 21rem;
-        margin-top: 0rem;
+        margin-top: 0.2rem;
         margin-bottom: 1.3rem;
     }
     #activite_4 figure img
     {
-        width: 21rem;
         height: 8.5rem;
     }
     #activite_5
     {
+        width: 90%;
         margin:0 0 0 0.4rem;
     }
     #activite_5 p
@@ -1549,17 +2181,16 @@ section aside #populaires
     }
     #activite_5 figure
     {
-        width: 21rem;
-        margin-top: 0rem;
+        margin-top: 0.2rem;
         margin-bottom: 1.3rem;
     }
     #activite_5 figure img
     {
-        width: 21rem;
         height: 8.5rem;
     }
     #activite_6
     {
+        width: 90%;
         margin:0 0 0 0.4rem;
     }
     #activite_6 p
@@ -1568,24 +2199,22 @@ section aside #populaires
     }
     #activite_6 figure
     {
-        width: 21rem;
-        margin-top: 0rem;
+        margin-top: 0.2rem;
         margin-bottom: 1.3rem;
     }
     #activite_6 figure img
     {
-        width: 21rem;
         height: 8.5rem;
     }
 }
 footer
 {
     display: flex;
-    width: 100%;
+    width: auto;
     background-color: rgb(242,242,242);
     margin-top: 3rem;
     line-height: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 footer h1
 {
@@ -1620,9 +2249,9 @@ footer h1
 }
 #nos_hebergements
 {
-    width: 31%;
+    width: 32%;
     margin-top: 2.5rem;
-    margin-left: 3.5rem;
+    margin-left: 0rem;
 }
 #nos_hebergements h1
 {
@@ -1646,9 +2275,9 @@ footer h1
 }
 #assistance
 {
-    width: 38%;
+    width: 20%;
     margin-top: 2.5rem;
-    margin-left: 3.5rem;
+    margin-left: 0rem;
 }
 #assistance h1
 {
@@ -1670,13 +2299,35 @@ footer h1
     color: #0065FC;
     font-weight: bold;
 }
-@media all and (max-width: 375px)
+@media all and (min-width: 701px) and (max-width: 1160px)
+/*tablettes*/
+{
+    footer
+    {
+        padding-bottom: 1.2rem;
+    }
+    #a_propos
+    {
+        width: 40%;
+        margin-left: 2.5rem;
+    }
+    #nos_hebergements
+    {
+        width: 30%;
+        margin-left: 3rem;
+    }
+    #assistance
+    {
+        width: 30%;
+        margin-left: 2rem;
+    }
+}
+@media all and (max-width: 700px)
 /*smartphones*/
 {
     footer
     {
         flex-direction: column;
-        width: auto;
         margin-top: 1.8rem;
         padding-top: 0rem;
         padding-bottom: 2rem;
@@ -1689,13 +2340,13 @@ footer h1
     #nos_hebergements
     {
         width: auto;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         margin-left: 1.6rem;
     }
     #assistance
     {
         width: auto;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         margin-left: 1.6rem;
     }
 }
