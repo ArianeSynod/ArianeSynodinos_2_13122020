@@ -405,6 +405,7 @@ a.inscription:hover
 #partie1
 {
     display: inline-flex;
+    width: auto;
 }
 @media all and (min-width: 750px) and (max-width: 1160px)
 /*tablettes*/
@@ -421,9 +422,10 @@ a.inscription:hover
     #partie1
     {
         flex-direction: column-reverse;
+        max-width: 100%;
     }
 }
-#hebergements
+article
 {
     display: flex;
     justify-content: flex-start;
@@ -434,7 +436,7 @@ a.inscription:hover
     padding-left: 1.4rem;
 
 }
-#hebergements h1
+article h1
 {
     margin-left: 1rem;
     width: 80%;
@@ -442,7 +444,7 @@ a.inscription:hover
     padding-top: 1.4rem;
     margin-bottom: 0.3rem;
 }
-#hebergement_1
+#hebergement_1, #hebergement_2, #hebergement_3, #hebergement_4, #hebergement_5, #hebergement_6
 {
     background-color: white;
     width: auto;
@@ -451,12 +453,12 @@ a.inscription:hover
     margin: 0.95rem;
     cursor: pointer;
 }
-#hebergement_1 a
+#hebergement_1 a, #hebergement_2 a, #hebergement_3 a, #hebergement_4 a, #hebergement_5 a, #hebergement_6 a
 {
     text-decoration: none;
     color: initial;
 }
-#hebergement_1 figure
+#hebergement_1 figure, #hebergement_2 figure, #hebergement_3 figure, #hebergement_4 figure, #hebergement_5 figure, #hebergement_6 figure
 {
     display: flex;
     flex-flow: column;
@@ -467,17 +469,24 @@ a.inscription:hover
     box-shadow: 0px 4px 4px 4px rgb(234,234,234);
     margin: auto;
 }
-#hebergement_1 figure img 
+#hebergement_1 figure img, #hebergement_2 figure img, #hebergement_3 figure img, #hebergement_4 figure img, #hebergement_5 figure img, #hebergement_6 figure img 
 {
     margin-top: 0;
     width: 14.8rem;
     height: 8.3rem;
     object-fit: cover;
-    object-position: bottom;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-#hebergement_1 figure figcaption
+#hebergement_1 figure img, #hebergement_2 figure img, #hebergement_3 figure img, #hebergement_5 figure img
+{
+    object-position: bottom;
+}
+#hebergement_4 figure img, #hebergement_6 figure img
+{
+    object-position: center;
+}
+#hebergement_1 figure figcaption, #hebergement_2 figure figcaption, #hebergement_3 figure figcaption, #hebergement_4 figure figcaption, #hebergement_5 figure figcaption, #hebergement_6 figure figcaption
 {
     background-color: white;
     line-height: 45%;
@@ -486,323 +495,25 @@ a.inscription:hover
     border-bottom-left-radius:1rem;
     border-bottom-right-radius: 1rem;
 }
-#hebergement_1 figure figcaption h2
+#hebergement_1 figure figcaption h2, #hebergement_2 figure figcaption h2, #hebergement_3 figure figcaption h2, #hebergement_4 figure figcaption h2, #hebergement_5 figure figcaption h2, #hebergement_6 figure figcaption h2
 {
     font-size: 100%;
     font-weight: bold;
     margin-left: 0.5rem;
 }
-#hebergement_1 figure figcaption h3
+#hebergement_1 figure figcaption h3, #hebergement_2 figure figcaption h3, #hebergement_3 figure figcaption h3, #hebergement_4 figure figcaption h3, #hebergement_5 figure figcaption h3, #hebergement_6 figure figcaption h3
 {
     font-size: 90%;
     margin-left: 0.5rem;
 }
-#hebergement_1 figure figcaption p
-{
-    font-size: 72%;
-    margin-left: 0.5rem;
-}
-#hebergement_2
-{
-    background-color: white;
-    width: auto;
-    height: 12.5rem;
-    border-radius: 1.3rem;
-    margin: 0.95rem;
-    cursor: pointer;
-}
-#hebergement_2 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#hebergement_2 figure
-{
-    display: flex;
-    flex-flow: column;
-    max-width: 15rem;
-    height: auto;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-    margin: auto;
-}
-#hebergement_2 figure img 
-{
-    margin-top: 0;
-    width: 14.8rem;
-    height: 8.3rem;
-    object-fit: cover;
-    object-position: bottom;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#hebergement_2 figure figcaption
-{
-    background-color: white;
-    line-height: 45%;
-    text-align: left;
-    margin-top: -1.4rem;
-    border-bottom-left-radius:1rem;
-    border-bottom-right-radius: 1rem;
-}
-#hebergement_2 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-#hebergement_2 figure figcaption h3
-{
-    font-size: 90%;
-    margin-left: 0.5rem;
-}
-#hebergement_2 figure figcaption p
-{
-    font-size: 72%;
-    margin-left: 0.5rem;
-}
-#hebergement_3
-{
-    background-color: white;
-    width: auto;
-    height: 12.5rem;
-    border-radius: 1.3rem;
-    margin: 0.95rem;
-    cursor: pointer;
-}
-#hebergement_3 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#hebergement_3 figure
-{
-    display: flex;
-    flex-flow: column;
-    max-width: 15rem;
-    height: auto;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-    margin: auto;
-}
-#hebergement_3 figure img 
-{
-    margin-top: 0;
-    width: 14.8rem;
-    height: 8.3rem;
-    object-fit: cover;
-    object-position: bottom;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#hebergement_3 figure figcaption
-{
-    background-color: white;
-    line-height: 45%;
-    text-align: left;
-    margin-top: -1.4rem;
-    border-bottom-left-radius:1rem;
-    border-bottom-right-radius: 1rem;
-}
-#hebergement_3 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-#hebergement_3 figure figcaption h3
-{
-    font-size: 90%;
-    margin-left: 0.5rem;
-}
-#hebergement_3 figure figcaption p
-{
-    font-size: 72%;
-    margin-left: 0.5rem;
-}
-#hebergement_4
-{
-    background-color: white;
-    width: auto;
-    height: 12.5rem;
-    border-radius: 1.3rem;
-    margin: 0.95rem;
-    cursor: pointer;
-}
-#hebergement_4 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#hebergement_4 figure
-{
-    display: flex;
-    flex-flow: column;
-    max-width: 15rem;
-    height: auto;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);    margin: auto;
-}
-#hebergement_4 figure img 
-{
-    margin-top: 0;
-    width: 14.8rem;
-    height: 8.3rem;
-    object-fit: cover;
-    object-position: bottom;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#hebergement_4 figure figcaption
-{
-    background-color: white;
-    line-height: 45%;
-    text-align: left;
-    margin-top: -1.4rem;
-    border-bottom-left-radius:1rem;
-    border-bottom-right-radius: 1rem;
-}
-#hebergement_4 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-#hebergement_4 figure figcaption h3
-{
-    font-size: 90%;
-    margin-left: 0.5rem;
-}
-#hebergement_4 figure figcaption p
-{
-    font-size: 72%;
-    margin-left: 0.5rem;
-}
-#hebergement_5
-{
-    background-color: white;
-    width: auto;
-    height: 12.5rem;
-    border-radius: 1.3rem;
-    margin: 0.95rem;
-    cursor: pointer;
-}
-#hebergement_5 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#hebergement_5 figure
-{
-    display: flex;
-    flex-flow: column;
-    max-width: 15rem;
-    height: auto;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-    margin: auto;
-}
-#hebergement_5 figure img 
-{
-    margin-top: 0;
-    width: 14.8rem;
-    height: 8.3rem;
-    object-fit: cover;
-    object-position: bottom;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#hebergement_5 figure figcaption
-{
-    background-color: white;
-    line-height: 45%;
-    text-align: left;
-    margin-top: -1.4rem;
-    border-bottom-left-radius:1rem;
-    border-bottom-right-radius: 1rem;
-}
-#hebergement_5 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-#hebergement_5 figure figcaption h3
-{
-    font-size: 90%;
-    margin-left: 0.5rem;
-}
-#hebergement_5 figure figcaption p
-{
-    font-size: 72%;
-    margin-left: 0.5rem;
-}
-#hebergement_6
-{
-    background-color: white;
-    width: auto;
-    height: 12.5rem;
-    border-radius: 1.3rem;
-    margin: 0.95rem;
-    cursor: pointer;
-}
-#hebergement_6 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#hebergement_6 figure
-{
-    display: flex;
-    flex-flow: column;
-    max-width: 15rem;
-    height: auto;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-    margin: auto;
-}
-#hebergement_6 figure img 
-{
-    margin-top: 0;
-    width: 14.8rem;
-    height: 8.3rem;
-    object-fit: cover;
-    object-position: bottom;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#hebergement_6 figure figcaption
-{
-    background-color: white;
-    line-height: 45%;
-    text-align: left;
-    margin-top: -1.4rem;
-    border-bottom-left-radius:1rem;
-    border-bottom-right-radius: 1rem;
-}
-#hebergement_6 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-left: 0.5rem;
-}
-#hebergement_6 figure figcaption h3
-{
-    font-size: 90%;
-    margin-left: 0.5rem;
-}
-#hebergement_6 figure figcaption p
+#hebergement_1 figure figcaption p, #hebergement_2 figure figcaption p, #hebergement_3 figure figcaption p, #hebergement_4 figure figcaption p, #hebergement_5 figure figcaption p, #hebergement_6 figure figcaption p
 {
     font-size: 72%;
     margin-left: 0.5rem;
 }
 #afficher h2
 {
+    width: 30rem;
     margin: 0.7rem 0rem 1.5rem 0.5rem;
 }
 #afficher a
@@ -824,12 +535,12 @@ a.inscription:hover
 @media all and (min-width: 750px) and (max-width: 1160px)
 /*tablettes*/
 {
-    #hebergements
+    article
     {
         margin: 2rem 0 0 0;
         padding: 0 0 1.5% 1.5%;
     }
-    #hebergements h1
+    article h1
     {
         margin-left: 1.5rem;
         width: 100%;
@@ -837,7 +548,7 @@ a.inscription:hover
         padding-top: 1rem;
         margin-bottom: 0.3rem;
     }
-    #hebergement_1
+    #hebergement_1, #hebergement_2, #hebergement_3, #hebergement_4, #hebergement_5, #hebergement_6 
     {
         display: flex;
         flex-direction: column;
@@ -846,113 +557,19 @@ a.inscription:hover
         height:11.5rem;
         margin: 0.95rem 0 0.95rem 0.95rem;
     }
-    #hebergement_1 figure
+    #hebergement_1 figure, #hebergement_2 figure, #hebergement_3 figure, #hebergement_4 figure, #hebergement_5 figure, #hebergement_6 figure
     {
         max-width: none;
         width: auto;
     }
-    #hebergement_1 figure img 
-    {
-        width:100%;
-        height: 7.5rem;
-    }
-    #hebergement_2
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height:11.5rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #hebergement_2 figure
-    {
-        max-width: none;
-        width:auto;
-    }
-    #hebergement_2 figure img 
-    {
-        width:100%;
-        height: 7.5rem;
-    }
-    #hebergement_3
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height:11.5rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #hebergement_3 figure
-    {
-        max-width: none;
-        width:auto;
-    }
-    #hebergement_3 figure img 
-    {
-        width:100%;
-        height: 7.5rem;
-    }
-    #hebergement_4
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height:11.5rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #hebergement_4 figure
-    {
-        max-width: none;
-        width:auto;
-    }
-    #hebergement_4 figure img 
-    {
-        width:100%;
-        height: 7.5rem;
-    }
-    #hebergement_5
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height:11.5rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #hebergement_5 figure
-    {
-        max-width: none;
-        width:auto;
-    }
-    #hebergement_5 figure img 
-    {
-        width:100%;
-        height: 7.5rem;
-    }
-    #hebergement_6
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height:11.5rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #hebergement_6 figure
-    {
-        max-width: none;
-        width:auto;
-    }
-    #hebergement_6 figure img 
+    #hebergement_1 figure img, #hebergement_2 figure img, #hebergement_3 figure img, #hebergement_4 figure img, #hebergement_5 figure img, #hebergement_6 figure img 
     {
         width:100%;
         height: 7.5rem;
     }
     #afficher h2
     {
+        width: 100%;
         margin: 0.5rem 0 0 0.5rem;
     }
     #afficher a
@@ -963,179 +580,49 @@ a.inscription:hover
 @media all and (max-width: 749px)
 /*smartphones*/
 {
-    #hebergements
+    article
     {
         flex-direction: column;
+        width: 90.3%;
         background-color: initial;
         padding-left: 0rem;
         margin: 0rem;
     }
-    #hebergements h1
+    article h1
     {
         margin-bottom: 1.2rem;
         margin-left: 1.5rem;
     }
-    #hebergement_1
+    #hebergement_1, #hebergement_2, #hebergement_3, #hebergement_4, #hebergement_5, #hebergement_6
     {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        width: 92%;
+        width: 100%;
         height: 12.3rem;
         margin: 0 0 0.8rem 0;
     }
-    #hebergement_1 figure
+    #hebergement_1 figure, #hebergement_2 figure, #hebergement_3 figure, #hebergement_4 figure, #hebergement_5 figure, #hebergement_6 figure
     {
         max-width: 100%;
         box-shadow: 4px 4px 4px 4px rgb(234,234,234);
         margin: 0 0 0 1.4rem;
     }
-    #hebergement_1 figure img
+    #hebergement_1 figure img, #hebergement_2 figure img, #hebergement_3 figure img, #hebergement_4 figure img, #hebergement_5 figure img, #hebergement_6 figure img
     {
         display: flex;
         width: 100%;
         height: 8.6rem;
         object-position: center;
     }
-    #hebergement_1 figure figcaption p
+    #hebergement_1 figure figcaption p, #hebergement_2 figure figcaption p, #hebergement_3 figure figcaption p, #hebergement_4 figure figcaption p, #hebergement_5 figure figcaption p, #hebergement_6 figure figcaption p
     {
         width: 100%;
         margin-bottom: 0.4rem;
     }
-    #hebergement_2
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 92%;
-        height: 12.3rem;
-        margin: 0 0 0.8rem 0;
-    }
-    #hebergement_2 figure
-    {
-        max-width: 100%;
-                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_2 figure img
-    {
-        display: flex;
-        width: 100%;
-        height: 8.6rem;
-        object-position: center;
-    }
-    #hebergement_2 figure figcaption p
+    #afficher h2
     {
         width: 100%;
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_3
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 92%;
-        height: 12.3rem;
-        margin: 0 0 0.8rem 0;
-    }
-    #hebergement_3 figure
-    {
-        max-width: 100%;
-        box-shadow: 4px 4px 4px 4px rgb(234,234,234);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_3 figure img
-    {
-        display: flex;
-        width: 100%;
-        height: 8.6rem;
-        object-position: center;
-    }
-    #hebergement_3 figure figcaption p
-    {
-        width: 100%;
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_4
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 92%;
-        height: 12.3rem;
-        margin: 0 0 0.8rem 0;
-    }
-    #hebergement_4 figure
-    {
-        max-width: 100%;
-                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_4 figure img
-    {
-        display: flex;
-        width: 100%;
-        height: 8.6rem;
-        object-position: center;
-    }
-    #hebergement_4 figure figcaption p
-    {
-        width: 100%;
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_5
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 92%;
-        height: 12.3rem;
-        margin: 0 0 0.8rem 0;
-    }
-    #hebergement_5 figure
-    {
-        max-width: 100%;
-                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_5 figure img
-    {
-        display: flex;
-        width: 100%;
-        height: 8.6rem;
-        object-position: center;
-    }
-    #hebergement_5 figure figcaption p
-    {
-        width: 100%;
-        margin-bottom: 0.4rem;
-    }
-    #hebergement_6
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 92%;
-        height: 12.3rem;
-        margin: 0 0 0.8rem 0;
-    }
-    #hebergement_6 figure
-    {
-        max-width: 100%;
-                box-shadow: 4px 4px 4px 4px rgb(234,234,234);
-        margin: 0 0 0 1.4rem;
-    }
-    #hebergement_6 figure img
-    {
-        display: flex;
-        width: 100%;
-        height: 8.6rem;
-        object-position: center;
-    }
-    #hebergement_6 figure figcaption p
-    {
-        width: 100%;
-        margin-bottom: 0.4rem;
     }
 }
 section aside #populaires
@@ -1166,7 +653,7 @@ section aside #populaires
     width: 100%;
     font-size: 135%;
 }
-#populaire_1
+#populaire_1, #populaire_2, #populaire_3
 {
     background-color: white;
     width: 21.5rem;
@@ -1176,12 +663,12 @@ section aside #populaires
     margin-bottom: 2rem;
     margin-right: 0.5rem;
 }
-#populaire_1 a
+#populaire_1 a, #populaire_2 a, #populaire_3 a
 {
     text-decoration: none;
     color: initial;
 }
-#populaire_1 figure
+#populaire_1 figure, #populaire_2 figure, #populaire_3 figure
 {
     display: flex;
     flex-flow: row;
@@ -1191,7 +678,7 @@ section aside #populaires
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(234,234,234);
 }
-#populaire_1 figure img 
+#populaire_1 figure img, #populaire_2 figure img, #populaire_3 figure img 
 {
     width: 10.1rem; 
     height: 8.5rem;
@@ -1201,7 +688,7 @@ section aside #populaires
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
-#populaire_1 figure figcaption
+#populaire_1 figure figcaption, #populaire_2 figure figcaption, #populaire_3 figure figcaption
 {
     text-align: left;
     background-color: white;
@@ -1211,137 +698,17 @@ section aside #populaires
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
-#populaire_1 figure figcaption h2
+#populaire_1 figure figcaption h2, #populaire_2 figure figcaption h2, #populaire_3 figure figcaption h2
 {
     font-size: 100%;
     font-weight: bold;
     margin-bottom: -0.3rem;
 }
-#populaire_1 figure figcaption h3
+#populaire_1 figure figcaption h3, #populaire_2 figure figcaption h3, #populaire_3 figure figcaption h3
 {
     font-size: 90%;
 }
-#populaire_1 figure figcaption p
-{
-    font-size: 66%;
-    margin-top: 2.2rem;
-}
-#populaire_2
-{
-    background-color: white;
-    width: 21.5rem;
-    height: auto;
-    border-radius: 1.3rem;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    margin-right: 0.5rem;
-}
-#populaire_2 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#populaire_2 figure
-{
-    display: flex;
-    flex-flow: row;
-    padding: 0.3rem;
-    height: auto;
-    margin: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-}
-#populaire_2 figure img 
-{
-    width: 10.1rem; 
-    height: 8.5rem;
-    flex-shrink: 0;
-    object-fit: cover;
-    object-position: right;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-#populaire_2 figure figcaption
-{
-    text-align: left;
-    background-color: white;
-    margin-left: -2.1rem;
-    margin-right: 1.2rem;
-    padding-left: 1.5rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-#populaire_2 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-bottom: -0.3rem;
-}
-#populaire_2 figure figcaption h3
-{
-    font-size: 90%;
-}
-#populaire_2 figure figcaption p
-{
-    font-size: 66%;
-    margin-top: 2.2rem;
-}
-#populaire_3
-{
-    background-color: white;
-    width: 21.5rem;
-    height: auto;
-    border-radius: 1.3rem;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    margin-right: 0.5rem;
-}
-#populaire_3 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#populaire_3 figure
-{
-    display: flex;
-    flex-flow: row;
-    padding: 0.3rem;
-    height: auto;
-    margin: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-}
-#populaire_3 figure img 
-{
-    width: 10.1rem; 
-    height: 8.5rem;
-    flex-shrink: 0;
-    object-fit: cover;
-    object-position: right;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-#populaire_3 figure figcaption
-{
-    text-align: left;
-    background-color: white;
-    margin-left: -2.1rem;
-    margin-right: 1.2rem;
-    padding-left: 1.5rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-#populaire_3 figure figcaption h2
-{
-    font-size: 100%;
-    font-weight: bold;
-    margin-bottom: -0.3rem;
-}
-#populaire_3 figure figcaption h3
-{
-    font-size: 90%;
-}
-#populaire_3 figure figcaption p
+#populaire_1 figure figcaption p, #populaire_2 figure figcaption p, #populaire_3 figure figcaption p
 {
     font-size: 66%;
     margin-top: 2.2rem;
@@ -1373,7 +740,7 @@ section aside #populaires
         padding-left: 1.5rem;
         margin-bottom: 0.5rem;
     }
-    #populaire_1 
+    #populaire_1, #populaire_2, #populaire_3   
     {
         display: flex;
         flex-direction: column;
@@ -1382,12 +749,12 @@ section aside #populaires
         height: 12.4rem;
         margin: 0.95rem 0 0.95rem 0.95rem;
     }
-    #populaire_1 figure
+    #populaire_1 figure, #populaire_2 figure, #populaire_3 figure
     {
         flex-flow: column;
         width: auto;
     }
-    #populaire_1 figure img 
+    #populaire_1 figure img, #populaire_2 figure img, #populaire_3 figure img 
     {
         margin-top: 0;
         width: 100%;
@@ -1397,7 +764,7 @@ section aside #populaires
         border-top-right-radius: 1rem;
         border-bottom-left-radius: 0;
     }
-    #populaire_1 figure figcaption
+    #populaire_1 figure figcaption, #populaire_2 figure figcaption, #populaire_3 figure figcaption
     {
         line-height: 45%;
         margin-top: -1.4rem;
@@ -1407,56 +774,12 @@ section aside #populaires
         border-top-right-radius: 0;
         border-bottom-left-radius:1rem;
     }
-    #populaire_1 figure figcaption h2
+    #populaire_1 figure figcaption h2, #populaire_3 figure figcaption h2
     {
         line-height: 200%;
         margin-top: 0.5rem;
         margin-bottom: 0;
         margin-left: 0.5rem;
-    }
-    #populaire_1 figure figcaption h3
-    {
-        margin-top: 0.6rem;
-        margin-left: 0.5rem;
-    }
-    #populaire_1 figure figcaption p
-    {
-        margin-top: 0;
-        margin-left: 0.5rem;
-    }
-    #populaire_2 
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height: 12.4rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #populaire_2 figure
-    {
-        flex-flow: column;
-        width: auto;
-    }
-    #populaire_2 figure img 
-    {
-        margin-top: 0;
-        width: 100%;
-        height: 7.5rem;
-        object-fit: cover;
-        object-position: center;
-        border-top-right-radius: 1rem;
-        border-bottom-left-radius: 0;
-    }
-    #populaire_2 figure figcaption
-    {
-        line-height: 45%;
-        margin-top: -1.4rem;
-        margin-right: 0;
-        margin-left: 0;
-        padding-left: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius:1rem;
     }
     #populaire_2 figure figcaption h2
     {
@@ -1465,63 +788,12 @@ section aside #populaires
         margin-bottom: 0;
         margin-left: 0.5rem;
     }
-    #populaire_2 figure figcaption h3
+    #populaire_1 figure figcaption h3, #populaire_2 figure figcaption h3, #populaire_3 figure figcaption h3
     {
         margin-top: 0.6rem;
         margin-left: 0.5rem;
     }
-    #populaire_2 figure figcaption p
-    {
-        margin-top: 0;
-        margin-left: 0.5rem;
-    }
-    #populaire_3 
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 30%;
-        height: 12.4rem;
-        margin: 0.95rem 0 0.95rem 0.95rem;
-    }
-    #populaire_3 figure
-    {
-        flex-flow: column;
-        width: auto;
-    }
-    #populaire_3 figure img 
-    {
-        margin-top: 0;
-        width: 100%;
-        height: 7.5rem;
-        object-fit: cover;
-        object-position: center;
-        border-top-right-radius: 1rem;
-        border-bottom-left-radius: 0;
-    }
-    #populaire_3 figure figcaption
-    {
-        line-height: 45%;
-        margin-top: -1.4rem;
-        margin-right: 0;
-        margin-left: 0;
-        padding-left: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius:1rem;
-    }
-    #populaire_3 figure figcaption h2
-    {
-        line-height: 200%;
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-        margin-left: 0.5rem;
-    }
-    #populaire_3 figure figcaption h3
-    {
-        margin-top: 0.6rem;
-        margin-left: 0.5rem;
-    }
-    #populaire_3 figure figcaption p
+    #populaire_1 figure figcaption p, #populaire_2 figure figcaption p, #populaire_3 figure figcaption p
     {
         margin-top: 0;
         margin-left: 0.5rem;
@@ -1534,7 +806,7 @@ section aside #populaires
     {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90.3%;
         margin: 0;
         padding-top: 1rem;
         padding-right: 0.938rem;
@@ -1550,89 +822,33 @@ section aside #populaires
     .fa-chart-line
     {
         padding-top: 1.5rem;
-        padding-right: 2.8rem;
+        padding-right: 0.8rem;
     }
-    #populaire_1 
+    #populaire_1, #populaire_2, #populaire_3
     {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        width: 88%;
+        width: 100%;
         margin-bottom: 0.6rem;
     }
-    #populaire_1 figure
+    #populaire_1 figure, #populaire_2 figure, #populaire_3 figure
     {
         margin: 0;
         width: 100%;
     }
-    #populaire_1 figure img 
+    #populaire_1 figure img, #populaire_2 figure img, #populaire_3 figure img 
     {
         display: flex;
         margin-top: 0;
         width: 50%;
     }
-    #populaire_1 figure figcaption
+    #populaire_1 figure figcaption, #populaire_2 figure figcaption, #populaire_3 figure figcaption
     {
         width: 50%;
         margin-right: 0;
     }
-    #populaire_1 p
-    {
-        margin: 0.65rem 0.65rem 0.65rem 0;
-    }
-    #populaire_2
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 88%;
-        margin-bottom: 0.6rem;
-    }
-    #populaire_2 figure
-    {
-        margin: 0;
-        width: 100%;
-    }
-    #populaire_2 figure img 
-    {
-        display: flex;
-        margin-top: 0;
-        width: 50%;
-    }
-    #populaire_2 figure figcaption
-    {
-        width: 50%;
-        margin-right: 0;
-    }
-    #populaire_2 p
-    {
-        margin: 0.65rem 0.65rem 0.65rem 0;
-    }
-    #populaire_3
-    {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        width: 88%;
-        margin-bottom: 0.6rem;
-    }
-    #populaire_3 figure
-    {
-        margin: 0;
-        width: 100%;
-    }
-    #populaire_3 figure img 
-    {
-        display: flex;
-        margin-top: 0;
-        width: 50%;
-    }
-    #populaire_3 figure figcaption
-    {
-        width: 50%;
-        margin-right: 0;
-    }
-    #populaire_3 p
+    #populaire_1 p, #populaire_2 p, #populaire_3 p
     {
         margin: 0.65rem 0.65rem 0.65rem 0;
     }
@@ -1670,249 +886,97 @@ section aside #populaires
 #activite_1
 {
     grid-area: b;
-    width: 100%;
-    border-radius: 1rem;
     align-self: start;
     margin-right: -2.2rem;
-    cursor: pointer;
-}
-#activite_1 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#activite_1 figure
-{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-}
-#activite_1 figure img
-{
-    width: 100%;
-    height: 24.5rem;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#activite_1 figure figcaption
-{
-    background-color: white;
-    width: 90%;
-    height: 3rem;
-    font-size: 125%;
-    font-weight: bold;
-    padding-top: 0.1rem;
-    padding-bottom: 0.2rem;
-    padding-left: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 #activite_2
 {
     grid-area: c;
-    width: 100%;
-    border-radius: 1rem;
-    align-self: start;
     margin-bottom: -1.8rem;
+    align-self: start;
     margin-right: -2.2rem;
-    cursor: pointer;
-}
-#activite_2 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#activite_2 figure
-{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(234,234,234);
-}
-#activite_2 figure img
-{
-    width: 100%;
-    height: 11.2rem;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#activite_2 figure figcaption
-{
-    background-color: white;
-    width: 90%;
-    height: 3rem;
-    font-weight: bold;
-    font-size: 125%;
-    padding-top: 0.1rem;
-    padding-bottom: 0.2rem;
-    padding-left: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 #activite_3
 {
     grid-area: d;
-    width: 100%;
-    border-radius: 1rem;
     align-self: end;
-    cursor: pointer;
     margin-right: -2.2rem;
-}
-#activite_3 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#activite_3 figure
-{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-}
-#activite_3 figure img
-{
-    width: 100%;
-    height: 7rem;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#activite_3 figure figcaption
-{
-    background-color: white;
-    width: 90%;
-    height: 3rem;
-    font-size: 125%;
-    font-weight: bold;
-    padding-top: 0.1rem;
-    padding-bottom: 0.2rem;
-    padding-left: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 #activite_4
 {
-   grid-area: e;
-   width: 100%;
-   border-radius: 1rem;
-   align-self: start;
-   margin-right: -2.2rem;
-   cursor: pointer;
-}
-#activite_4 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#activite_4 figure
-{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-}
-#activite_4 figure img
-{
-    width: 100%;
-    height: 24.5rem;
-    filter: opacity(85%);
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#activite_4 figure figcaption
-{
-    background-color: white;
-    width: 90%;
-    height: 3rem;
-    font-size: 125%;
-    font-weight: bold;
-    padding-top: 0.1rem;
-    padding-bottom: 0.2rem;
-    padding-left: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    grid-area: e;
+    align-self: start;
+    margin-right: -2.2rem;
 }
 #activite_5
 {
     grid-area: f;
-    width: 100%;
-    border-radius: 1rem;
     align-self: start;
-    cursor: pointer;
-}
-#activite_5 a
-{
-    text-decoration: none;
-    color: initial;
-}
-#activite_5 figure
-{
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px 4px rgb(242,242,242);
-}
-#activite_5 figure img
-{
-    width: 100%;
-    height: 8.8rem;
-    object-fit: cover;
-    object-position: top;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-#activite_5 figure figcaption
-{
-    background-color: white;
-    width: 90%;
-    height: 3rem;
-    font-size: 125%;
-    font-weight: bold;
-    padding-top: 0.1rem;
-    padding-bottom: 0.2rem;
-    padding-left: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    margin-right: -2.2rem;
 }
 #activite_6
 {
     grid-area: g;
+    align-self: end;
+}
+#activite_1, #activite_2, #activite_3, #activite_4, #activite_5, #activite_6
+{
     width: 100%;
     border-radius: 1rem;
-    align-self: end;
+    margin-right: -2.2rem;
     cursor: pointer;
 }
-#activite_6 a
+#activite_1 a, #activite_2 a, #activite_3 a, #activite_4 a, #activite_5 a,#activite_6 a
 {
     text-decoration: none;
     color: initial;
 }
-#activite_6 figure
+#activite_1 figure, #activite_2 figure, #activite_3 figure, #activite_4 figure, #activite_5 figure, #activite_6 figure
 {
     width: 100%;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 4px 4px 4px rgb(242,242,242);
 }
-#activite_6 figure img
+#activite_1 figure img, #activite_2 figure img, #activite_3 figure img, #activite_4 figure img, #activite_5 figure img, #activite_6 figure img
 {
     width: 100%;
-    height: 9.4rem;
     object-fit: cover;
-    object-position: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-#activite_6 figure figcaption
+#activite_1 figure img
+{
+    height: 24.5rem;
+    object-position: center;
+}
+#activite_2 figure img
+{
+    height: 11.2rem;
+    object-position: center;
+}
+#activite_3 figure img
+{
+    height: 7rem;
+    object-position: center;
+}
+#activite_4 figure img
+{
+    height: 24.5rem;
+    object-position: center;
+    filter: opacity(85%);
+}
+#activite_5 figure img
+{
+    height: 8.8rem;
+    object-position: top;
+}
+#activite_6 figure img
+{
+    height: 9.4rem;
+    object-position: center;
+}
+#activite_1 figure figcaption, #activite_2 figure figcaption, #activite_3 figure figcaption, #activite_4 figure figcaption, #activite_5 figure figcaption, #activite_6 figure figcaption
 {
     background-color: white;
     width: 90%;
@@ -1942,51 +1006,11 @@ section aside #populaires
         "b c d"
         "e f g";
     }
-    #activite_1
+    #activite_1, #activite_2, #activite_3, #activite_4, #activite_5, #activite_6
     {
         margin-right: 0;
     }
-    #activite_1 figure img
-    {
-        height: 11.2rem;
-    }
-    #activite_2
-    {
-        margin-right: 0;
-    }
-    #activite_2 figure img
-    {
-        height: 11.2rem;
-    }
-    #activite_3
-    {
-        margin-right: 0;
-    }
-    #activite_3 figure img
-    {
-        height: 11.2rem;
-    }
-    #activite_4
-    {
-        margin-right: 0;
-    }
-    #activite_4 figure img
-    {
-        height: 11.2rem;
-    }
-    #activite_5
-    {
-        margin-right: 0;
-    }
-    #activite_5 figure img
-    {
-        height: 11.2rem;
-    }
-    #activite_6
-    {
-        margin-right: 0;
-    }
-    #activite_6 figure img
+    #activite_1 figure img, #activite_2 figure img, #activite_3 figure img, #activite_4 figure img, #activite_5 figure img, #activite_6 figure img
     {
         height: 11.2rem;
     }
@@ -1996,10 +1020,10 @@ section aside #populaires
 {
     #activites
     {
-        width: 99.6%;
-        margin-top: 0rem;
-        margin-right: 1rem;
-        margin-left: -1.5rem;
+        width: 99%;
+        margin-top: 1rem;
+        margin-right: 0rem;
+        margin-left: -2.5rem;
         margin-bottom: 0rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
@@ -2012,59 +1036,14 @@ section aside #populaires
     }
     #activites h1
     {
-        margin-left: 1.5rem;
+        margin-left: 3rem;
         margin-bottom: 0.938rem;
     }
-    #activite_1 
+    #activite_1, #activite_2, #activite_3, #activite_4, #activite_5, #activite_6 
     {
         margin-right: 0;
     }
-    #activite_1 figure
-    {
-        margin-left: 1.5rem;
-        margin-right: 0;
-    }
-    #activite_2
-    {
-        margin-right: 0;
-    }
-    #activite_2 figure
-    {
-        margin-left: 1.5rem;
-        margin-right: 0;
-    }
-    #activite_3
-    {
-        margin-right: 0;
-    }
-    #activite_3 figure
-    {
-        margin-left: 1.5rem;
-        margin-right: 0;
-    }
-    #activite_4
-    {
-        margin-right: 0;
-    }
-    #activite_4 figure
-    {
-        margin-left: 1.5rem;
-        margin-right: 0;
-    }
-    #activite_5
-    {
-        margin-right: 0;
-    }
-    #activite_5 figure
-    {
-        margin-left: 1.5rem;
-        margin-right: 0;
-    }
-    #activite_6
-    {
-        margin-right: 0;
-    }
-    #activite_6 figure
+    #activite_1 figure, #activite_2 figure, #activite_3 figure, #activite_4 figure, #activite_5 figure, #activite_6 figure,
     {
         margin-left: 1.5rem;
         margin-right: 0;
@@ -2098,111 +1077,21 @@ section aside #populaires
         padding-top: 0rem;
         margin-bottom: 1.5rem;
     }
-    #activite_1
+    #activite_1, #activite_2, #activite_3, #activite_4, #activite_5, #activite_6
     {
         width: 90%;
         margin:0 0 0 0.4rem;
     }
-    #activite_1 p
+    #activite_1 p, #activite_2 p, #activite_3 p, #activite_4 p, #activite_5 p, #activite_6 p
     {
         margin:0.2rem;
     }
-    #activite_1 figure
-    {
-        margin-top: 0rem;
-        margin-bottom: 1.3rem;
-    }
-    #activite_1 figure img
-    {
-        height: 8.5rem;
-    }
-    #activite_2
-    {
-        width: 90%;
-        margin:0 0 0 0.4rem;
-    }
-    #activite_2 p
-    {
-        margin: 0.2rem;
-    }
-    #activite_2 figure
+    #activite_1 figure, #activite_2 figure, #activite_3 figure, #activite_4 figure, #activite_5 figure, #activite_6 figure
     {
         margin-top: 0.2rem;
         margin-bottom: 1.3rem;
     }
-    #activite_2 figure img
-    {
-        height: 8.5rem;
-    }
-    #activite_3
-    {
-        width: 90%;
-        margin:0 0 0 0.4rem;
-    }
-    #activite_3 p
-    {
-        margin: 0.2rem;
-    }
-    #activite_3 figure
-    {
-        margin-top: 0.2rem;
-        margin-bottom: 1.3rem;
-    }
-    #activite_3 figure img
-    {
-        height: 8.5rem;
-    }
-    #activite_4
-    {
-        width: 90%;
-        margin:0 0 0 0.4rem;
-    }
-    #activite_4 p
-    {
-        margin: 0.2rem;
-    }
-    #activite_4 figure
-    {
-        margin-top: 0.2rem;
-        margin-bottom: 1.3rem;
-    }
-    #activite_4 figure img
-    {
-        height: 8.5rem;
-    }
-    #activite_5
-    {
-        width: 90%;
-        margin:0 0 0 0.4rem;
-    }
-    #activite_5 p
-    {
-        margin: 0.2rem;
-    }
-    #activite_5 figure
-    {
-        margin-top: 0.2rem;
-        margin-bottom: 1.3rem;
-    }
-    #activite_5 figure img
-    {
-        height: 8.5rem;
-    }
-    #activite_6
-    {
-        width: 90%;
-        margin:0 0 0 0.4rem;
-    }
-    #activite_6 p
-    {
-        margin: 0.2rem;
-    }
-    #activite_6 figure
-    {
-        margin-top: 0.2rem;
-        margin-bottom: 1.3rem;
-    }
-    #activite_6 figure img
+    #activite_1 figure img, #activite_2 figure img, #activite_3 figure img, #activite_4 figure img, #activite_5 figure img, #activite_6 figure img
     {
         height: 8.5rem;
     }
